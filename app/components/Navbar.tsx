@@ -11,19 +11,28 @@ const Navbar = () => {
 
   return (
     <nav
-      className='text-white sticky top-0 z-[100] backdrop-blur-lg border-b-[.5px] border-gray-400'
-      style={{
-        backgroundImage:
-          'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1))',
-      }}
+      className={`text-white ${
+        pathname === '/'
+          ? 'sticky top-0 z-[100] backdrop-blur-lg border-b-[.5px] border-gray-400 '
+          : 'static bg-[#191919] backdrop-blur-none '
+      }`}
+      style={
+        pathname === '/'
+          ? {
+              backgroundImage:
+                'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1))',
+            }
+          : {}
+      }
     >
-      <div className='flex flex-row justify-between py-6 w-[1200px] mx-auto'>
+      <div className='flex flex-row justify-between py-6 max-w-[1200px] mx-auto'>
         <div className='text-3xl font-bold'>
           <Link href='/'>
             <Image
               src='/wojtek.webp'
               width={500}
               height={203}
+              priority={true}
               alt='Logo OSK WOJTEK'
               className='w-32'
             />
@@ -41,19 +50,6 @@ const Navbar = () => {
             </RedUnderscoreHoverAnimation>
           </Link>
           <Link
-            href='/cennik'
-            className={`${
-              pathname === '/cennik' ? 'border-b-2 border-[#CE2029]' : ''
-            }`}
-          >
-            <RedUnderscoreHoverAnimation
-              currentPath={pathname}
-              thisPath='/cennik'
-            >
-              Cennik
-            </RedUnderscoreHoverAnimation>
-          </Link>
-          <Link
             href='/jak-zaczac-kurs'
             className={`${
               pathname === '/jak-zaczac-kurs'
@@ -68,6 +64,20 @@ const Navbar = () => {
               Jak zacząć kurs?
             </RedUnderscoreHoverAnimation>
           </Link>
+          <Link
+            href='/cennik'
+            className={`${
+              pathname === '/cennik' ? 'border-b-2 border-[#CE2029]' : ''
+            }`}
+          >
+            <RedUnderscoreHoverAnimation
+              currentPath={pathname}
+              thisPath='/cennik'
+            >
+              Cennik
+            </RedUnderscoreHoverAnimation>
+          </Link>
+
           <Link
             href='/kontakt'
             className={`${

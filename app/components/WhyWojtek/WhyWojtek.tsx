@@ -3,7 +3,7 @@ import { anton } from '../../fonts';
 import ButtonRed from '../buttons/ButtonRed';
 import ButtonWhite from '../buttons/ButtonWhite';
 import Link from 'next/link';
-import DivAnimation from '../animations/DivYAnimation';
+import DivAnimation from '../animations/DivYOpacityAnimation';
 import WhyWojtekImg from './WhyWojtekImg';
 import DivOpacityAnimation from '../animations/DivOpacityAnimation';
 
@@ -12,9 +12,9 @@ export default function WhyWojtek() {
     <section className='flex justify-center bg-[#f5f5f5] -mt-[101px] h-[43rem] pt-16'>
       <div className='w-[1200px] max-w-[1200px]'>
         <div className='flex gap-28'>
-          <DivAnimation>
+          <DivAnimation absolute='absolute' delay={0.75}>
             <div
-              className='bg-[#CE2029] w-[640px] h-[480px] absolute -ml-5 my-5'
+              className='bg-[#CE2029] w-[640px] h-[480px] absolute -ml-5 my-5  rounded-2xl'
               style={{
                 clipPath: 'polygon(0 12.8%, 100% 0%, 100% 100%, 0% 100%)',
               }}

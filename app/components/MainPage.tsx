@@ -5,6 +5,7 @@ import DivOpacityAnimation from './animations/DivOpacityAnimation';
 import FromLeftAnimation from './animations/FromLeftAnimation';
 import GrowAnimation from './animations/GrowAnimation';
 import WomanDrivingCarImg from '../../public/woman-driving-cut.webp';
+import DivReverseOpacityAnimation from './animations/DivReverseOpacityAnimation';
 
 export default function MainPage() {
   return (
@@ -41,14 +42,14 @@ export default function MainPage() {
         </FromLeftAnimation>
       </div>
       {/* red boxes */}
+        <div
+          className='w-[34rem] h-[33rem] bg-[#CE2029] absolute bottom-[6%] right-0 rounded-2xl'
+          style={{
+            clipPath: 'polygon(0 0, 100% 0%, 100% 90.2%, 0% 100%)',
+          }}
+        ></div>
       <div
-        className='w-[34rem] h-[33rem] bg-[#CE2029] absolute bottom-[6%] right-0'
-        style={{
-          clipPath: 'polygon(0 0, 100% 0%, 100% 90.2%, 0% 100%)',
-        }}
-      ></div>
-      <div
-        className='w-[50rem] h-[33rem] bg-[#990f0f] absolute bottom-[6.5%] right-0'
+        className='w-[50rem] h-[33rem] bg-[#990f0f] absolute z-0 bottom-[6.5%] right-0 rounded-2xl'
         style={{
           clipPath: 'polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%)',
         }}

@@ -20,7 +20,7 @@ const AboutUs = () => {
   return (
     <div className='bg-[#f5f5f5] py-20 relative'>
       <div className='max-w-[1400px] mx-auto relative z-10'>
-        <h3 className='pb-10 text-center font-bold text-3xl'>aha</h3>
+        <h3 className='pb-10 text-center font-bold text-3xl'>Fusce vitae</h3>
         <ScaleFromMiddleAnimation>
           <div className='grid grid-cols-4 justify-items-center text-xl'>
             <AboutUsCard header={header1} text={text1} />
@@ -30,7 +30,7 @@ const AboutUs = () => {
           </div>
         </ScaleFromMiddleAnimation>
       </div>
-      <div className='absolute inset-0 max-w-[1200px] mx-auto bg-white border border-black rounded-3xl'></div>
+      <div className='absolute inset-0 max-w-[1200px] mx-auto bg-white border border-black rounded-2xl'></div>
     </div>
   );
 };

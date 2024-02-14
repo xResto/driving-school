@@ -3,7 +3,17 @@ import React from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
-const DivYAnimation = ({ children }: { children: React.ReactNode }) => {
+interface DivYAnimationProps {
+  absolute?: string;
+  delay?: number;
+  children: React.ReactNode;
+}
+
+const DivYAnimation = ({
+  absolute = '',
+  delay = 0.25,
+  children,
+}: DivYAnimationProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const inView = useInView(ref, { once: true });
   const controls = useAnimation();
@@ -15,7 +25,7 @@ const DivYAnimation = ({ children }: { children: React.ReactNode }) => {
   }, [inView]);
 
   return (
-    <div ref={ref} className='absolute'>
+    <div ref={ref} className={absolute}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 50 },
@@ -23,7 +33,7 @@ const DivYAnimation = ({ children }: { children: React.ReactNode }) => {
         }}
         initial='hidden'
         animate={controls}
-        transition={{ duration: 0.5, delay: 0.75 }}
+        transition={{ duration: 0.5, delay }}
       >
         {children}
       </motion.div>

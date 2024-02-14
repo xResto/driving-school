@@ -11,7 +11,6 @@ export default function Home() {
       <WhyWojtek />
       <AboutUs />
       <Video />
-      <Footer />
     </>
   );
 }

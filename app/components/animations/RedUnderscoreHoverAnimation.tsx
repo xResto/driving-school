@@ -23,7 +23,7 @@ const RedUnderscoreHoverAnimation = ({
       {currentPath !== thisPath && (
         <motion.div
           variants={variants}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.4 }}
           className='absolute bottom-0 left-0 border-b-2 border-[#CE2029]'
         />
       )}
