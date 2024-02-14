@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-white ${
+      className={`text-white px-6 ${
         pathname === '/'
           ? 'sticky top-0 z-[100] backdrop-blur-lg border-b-[.5px] border-gray-400 '
           : 'static bg-[#191919] backdrop-blur-none '

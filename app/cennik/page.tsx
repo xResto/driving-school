@@ -8,11 +8,11 @@ const Cennik = () => {
     <>
       <div className='bg-[#191919] rounded-b-3xl text-white pb-20'>
         <DivOpacityAnimation>
-          <div className='mx-auto text-center py-28 w-[40rem]'>
-            <h1 className='text-6xl font-bold'>
+          <div className='mx-auto text-center py-28 px-6 max-w-[40rem]'>
+            <h1 className='text-4xl sm:text-6xl font-bold'>
               Aliquam tristique rhoncus ante
             </h1>
-            <p className='py-6 text-lg'>
+            <p className='py-6 text-md sm:text-lg'>
               Donec nec lobortis ipsum. Vestibulum consequat sem in dignissim
               pellentesque. Aliquam condimentum, risus eu ornare egestas, leo
               lectus sollicitudin diam, et luctus neque ex eget magna.
