@@ -3,9 +3,9 @@ import { anton } from '../../fonts';
 
 const ButtonWhite = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className={`${anton.className} px-7 py-3 rounded-3xl text-xl border border-[#CE2029] cursor-pointer bg-white hover:bg-[#CE2029] transform duration-300`}>
+    <button className={`${anton.className} px-7 py-3 rounded-full text-xl border border-[#CE2029] cursor-pointer bg-white focus:bg-[#CE2029] hover:bg-[#CE2029] transform duration-300`}>
       {children}
-    </div>
+    </button>
   );
 };
 

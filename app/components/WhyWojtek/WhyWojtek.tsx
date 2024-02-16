@@ -14,7 +14,7 @@ export default function WhyWojtek() {
         <div className='flex gap-28'>
           <DivAnimation absolute='absolute' delay={0.75}>
             <div
-              className='bg-[#CE2029] w-[640px] h-[480px] absolute -ml-5 my-5  rounded-2xl'
+              className='bg-[#CE2029] w-[640px] h-[480px] absolute -ml-5 my-5  rounded-lg'
               style={{
                 clipPath: 'polygon(0 12.8%, 100% 0%, 100% 100%, 0% 100%)',
               }}

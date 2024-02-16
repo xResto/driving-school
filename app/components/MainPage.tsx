@@ -43,13 +43,13 @@ export default function MainPage() {
       </div>
       {/* red boxes */}
         <div
-          className='w-[34rem] h-[33rem] bg-[#CE2029] absolute bottom-[6%] right-0 rounded-2xl'
+          className='w-[34rem] h-[33rem] bg-[#CE2029] absolute bottom-[6%] right-0 rounded-lg'
           style={{
             clipPath: 'polygon(0 0, 100% 0%, 100% 90.2%, 0% 100%)',
           }}
         ></div>
       <div
-        className='w-[50rem] h-[33rem] bg-[#990f0f] absolute z-0 bottom-[6.5%] right-0 rounded-2xl'
+        className='w-[50rem] h-[33rem] bg-[#990f0f] absolute z-0 bottom-[6.5%] right-0 rounded-lg'
         style={{
           clipPath: 'polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%)',
         }}
