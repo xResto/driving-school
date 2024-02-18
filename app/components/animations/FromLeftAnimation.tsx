@@ -25,7 +25,7 @@ const FromLeftAnimation = ({
     <div ref={ref}>
       <motion.div
         variants={{
-          hidden: { x: -1100 },
+          hidden: { x: -25 },
           visible: { x: 0 },
         }}
         initial='hidden'

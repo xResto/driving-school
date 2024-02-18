@@ -11,11 +11,20 @@ import {
 } from '@react-email/components';
 
 type ContactFormProps = {
+  firstName: string;
+  lastName?: string;
+  phoneNumber: string;
+  senderEmail?: string;
   message: string;
-  senderEmail: string;
 };
 
-const ContactForm = ({ message, senderEmail }: ContactFormProps) => {
+const ContactForm = ({
+  firstName,
+  lastName,
+  phoneNumber,
+  senderEmail,
+  message,
+}: ContactFormProps) => {
   return (
     <Html>
       <Head>
@@ -24,9 +33,13 @@ const ContactForm = ({ message, senderEmail }: ContactFormProps) => {
             <Container className='p-8 rounded-lg shadow-lg'>
               <Section>
                 <Heading>
-                  Otrzymałeś nową wiadomość z formularza kontaktowego
+                  Otrzymano nową wiadomość z formularza kontaktowego
                 </Heading>
-                <Text>Wiadomość od: {senderEmail}</Text>
+                <Text>
+                  Wiadomość od: {`${firstName} ${lastName}`}
+                </Text>
+                <Text>Numer telefonu: {phoneNumber}</Text>
+                {senderEmail && <Text>Email: {senderEmail}</Text>}
                 <Text>Treść wiadomości: {message}</Text>
               </Section>
             </Container>

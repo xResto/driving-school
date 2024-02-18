@@ -22,8 +22,8 @@ const ScaleFromMiddleAnimation = ({
     <div ref={ref}>
       <motion.div
         variants={{
-          hidden: { scale: 0, y: 200 },
-          visible: { scale: 1, y: 0 },
+          hidden: { scale: .8, y: 50, opacity: 0 },
+          visible: { scale: 1, y: 0, opacity: 1},
         }}
         initial='hidden'
         animate={controls}

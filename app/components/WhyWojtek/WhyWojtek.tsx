@@ -31,10 +31,9 @@ export default function WhyWojtek() {
             <DivOpacityAnimation>
               <p className='text-lg'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                tellus nisl, faucibus in lacus ac, luctus placerat libero. Sed a
-                malesuada diam. In porta feugiat dui, sit amet aliquam urna
-                condimentum nec. Sed ac commodo mauris. Pellentesque cursus sed
-                mauris at varius.
+                tellus nisl, faucibus in lacus ac, luctus placerat libero. In
+                porta feugiat dui, sit amet aliquam urna condimentum nec. Sed ac
+                commodo mauris. Pellentesque cursus sed mauris at varius.
               </p>
             </DivOpacityAnimation>
             <DivOpacityAnimation>
