@@ -3,7 +3,7 @@ import PriceCard from './PriceCard';
 import DivYAnimation from '../components/animations/DivYOpacityAnimation';
 
 const lectures = [
-  '30 godzin wykładów teoretycznych prowadzonych stacjonarnie',
+  '30 godzin wykładów teoretycznych, prowadzonych stacjonarnie',
   'materiały dydaktyczne w cenie',
 ];
 

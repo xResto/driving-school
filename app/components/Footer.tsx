@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='relative -z-10 bg-[#353535] text-white'>
-      <div className='mx-auto max-w-[1200px]'>Footer</div>
+    <footer className='bg-[#191919] text-[#fff5f5] flex justify-center text-sm py-4'>
+      &copy; 2024 OSK WOJTEK | Wszelkie prawa zastrzeżone
     </footer>
   );
 };

@@ -10,7 +10,7 @@ const Cennik = () => {
         <DivOpacityAnimation>
           <div className='mx-auto text-center py-28 px-6 max-w-[40rem]'>
             <h1 className='text-4xl sm:text-6xl font-bold'>
-              Aliquam tristique rhoncus ante
+              Cennik kursów na prawo jazdy
             </h1>
             <p className='py-6 text-md sm:text-lg'>
               Donec nec lobortis ipsum. Vestibulum consequat sem in dignissim

@@ -9,12 +9,12 @@ import DivOpacityAnimation from '../animations/DivOpacityAnimation';
 
 export default function WhyWojtek() {
   return (
-    <section className='flex justify-center bg-[#f5f5f5] -mt-[101px] h-[43rem] pt-16'>
+    <section className='flex justify-center bg-[#f5f5f5] -mt-[101px] h-[46rem] pt-16 px-12'>
       <div className='w-[1200px] max-w-[1200px]'>
-        <div className='flex gap-28'>
+        <div className='flex lg:flex-row flex-col-reverse max-lg:items-center xl:gap-28 gap-10'>
           <DivAnimation absolute='absolute' delay={0.75}>
             <div
-              className='bg-[#CE2029] w-[640px] h-[480px] absolute -ml-5 my-5  rounded-lg'
+              className='bg-[#CE2029] xl:w-[640px] w-[560px] xl:h-[480px] h-[420px] absolute lg:-ml-5 -ml-[18.75rem] lg:my-5 -my-[25rem] rounded-lg'
               style={{
                 clipPath: 'polygon(0 12.8%, 100% 0%, 100% 100%, 0% 100%)',
               }}
@@ -22,9 +22,9 @@ export default function WhyWojtek() {
           </DivAnimation>
           <WhyWojtekImg />
 
-          <div className='flex flex-col justify-evenly'>
+          <div className='flex flex-col max-lg:gap-10 max-lg:text-center justify-evenly max-lg:w-[36rem]'>
             <DivOpacityAnimation>
-              <h2 className={`${anton.className} text-5xl font-bold`}>
+              <h2 className={`${anton.className} text-6xl lg:text-6xl max-[1103px]:text-5xl font-bold`}>
                 Dlaczego WOJTEK
               </h2>
             </DivOpacityAnimation>
@@ -37,8 +37,8 @@ export default function WhyWojtek() {
               </p>
             </DivOpacityAnimation>
             <DivOpacityAnimation>
-              <div className='flex gap-10'>
-                <ButtonRed>O nas</ButtonRed>
+              <div className='flex gap-10 max-lg:justify-center'>
+                <ButtonRed>Galeria</ButtonRed>
                 <Link href='/cennik'>
                   <ButtonWhite>Cennik</ButtonWhite>
                 </Link>

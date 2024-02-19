@@ -1,14 +1,10 @@
 'use client';
 import React from 'react';
-import { sendEmail } from '../actions/sendEmail';
-import { anton } from '../fonts';
 import Image from 'next/image';
 import EnvelopeIcon from '../../public/envelope-icon.svg';
 import PhoneIcon from '../../public/phone-icon.svg';
 import DivOpacityAnimation from '../components/animations/DivOpacityAnimation';
-import DivYAnimation from '../components/animations/DivYOpacityAnimation';
-
-const requiredStar = <span className='text-[#CE2029]'>*</span>;
+import ContactForm from './ContactForm';
 
 const page = () => {
   return (
@@ -23,7 +19,7 @@ const page = () => {
               >
                 <div className='flex gap-2 items-center'>
                   <Image
-                    className='w-[.625rem]'
+                    className='w-3'
                     src={PhoneIcon}
                     alt='Ikonka telefonu'
                   />
@@ -36,7 +32,7 @@ const page = () => {
               >
                 <div className='flex gap-2 items-center'>
                   <Image
-                    className='w-[.625rem]'
+                    className='w-3'
                     src={PhoneIcon}
                     alt='Ikonka telefonu'
                   />
@@ -61,84 +57,23 @@ const page = () => {
           <h1 className='text-4xl font-bold mb-2'>Skontaktuj się z nami!</h1>
           <p>
             Napisz do nas wiadomość poprzez formularz kontaktowy lub na adres
-            email.
+            e-mail.
           </p>
           <p>
-            Skontaktujemy się z Tobą tak szybko jak to możliwe i zapiszemy na
+            Skontaktujemy się z Tobą tak szybko, jak to możliwe i zapiszemy na
             wybrany kurs.
           </p>
         </div>
       </DivOpacityAnimation>
-      <DivYAnimation delay={.75}>
-        <form
-          className='mt-10 flex flex-col gap-5 items-center'
-          action={async (formData) => {
-            await sendEmail(formData);
-          }}
-        >
-          <div className='lg:w-1/2 w-full flex max-[] justify-between gap-5'>
-            <div className='lg:w-1/2 w-full'>
-              <label htmlFor='firstName'>Imię {requiredStar}</label>
-              <input
-                className='h-14 mt-2 px-4 w-full rounded-lg border border-black/10'
-                type='text'
-                name='firstName'
-                id='firstName'
-                required
-              />
-            </div>
-            <div className='lg:w-1/2 w-full'>
-              <label htmlFor='lastName'>Nazwisko</label>
-              <input
-                className='h-14 mt-2 px-4 w-full rounded-lg border border-black/10'
-                type='text'
-                name='lastName'
-                id='lastName'
-              />
-            </div>
-          </div>
-          <div className='lg:w-1/2 w-full flex justify-between gap-5'>
-            <div className='lg:w-1/2 w-full'>
-              <label htmlFor='phoneNumber'>Numer telefonu {requiredStar}</label>
-              <input
-                className='h-14 mt-2 px-4 w-full rounded-lg border border-black/10'
-                name='phoneNumber'
-                id='phoneNumber'
-                type='tel'
-                required
-              />
-            </div>
-            <div className='lg:w-1/2 w-full'>
-              <label htmlFor='senderEmail'>Email</label>
-              <input
-                className='h-14 mt-2 px-4 w-full rounded-lg border border-black/10'
-                name='senderEmail'
-                id='senderEmail'
-                type='email'
-                maxLength={500}
-              />
-            </div>
-          </div>
-          <div className='lg:w-1/2 w-full'>
-            <label htmlFor='mesasge'>Wiadomość {requiredStar}</label>
-            <textarea
-              className='h-52 mt-2 p-4 w-full rounded-lg border border-black/10'
-              name='message'
-              id='message'
-              required
-              maxLength={500}
-              cols={30}
-              rows={10}
-            ></textarea>
-          </div>
-          <button
-            type='submit'
-            className={`${anton.className} h-[3rem] w-[8rem] text-xl bg-[#CE2029] text-white rounded-full outline-none cursor-pointer focus:bg-[#990f0f] hover:bg-[#990f0f] transform transition-all focus:scale-110 hover:scale-110 active:scale-105`}
-          >
-            Wyślij
-          </button>
-        </form>
-      </DivYAnimation>
+      <ContactForm />
+      <DivOpacityAnimation>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.6851768829138!2d21.688003077192036!3d50.57721697161662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d4a101a7375cd%3A0x3b9f3e1d25e4da15!2zT8Wbcm9kZWsgU3prb2xlbmlhIEtpZXJvd2PDs3cgIldPSlRFSyIgc3DDs8WCa2EgY3l3aWxuYQ!5e0!3m2!1spl!2spl!4v1708268217053!5m2!1spl!2spl'
+          className='mx-auto w-1/2 rounded-lg my-16'
+          height='450'
+          loading='lazy'
+        ></iframe>
+      </DivOpacityAnimation>
     </div>
   );
 };

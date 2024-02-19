@@ -10,7 +10,7 @@ import {
   Section,
 } from '@react-email/components';
 
-type ContactFormProps = {
+type EmailContactFormProps = {
   firstName: string;
   lastName?: string;
   phoneNumber: string;
@@ -18,13 +18,13 @@ type ContactFormProps = {
   message: string;
 };
 
-const ContactForm = ({
+const EmailContactForm = ({
   firstName,
   lastName,
   phoneNumber,
   senderEmail,
   message,
-}: ContactFormProps) => {
+}: EmailContactFormProps) => {
   return (
     <Html>
       <Head>
@@ -50,4 +50,4 @@ const ContactForm = ({
   );
 };
 
-export default ContactForm;
+export default EmailContactForm;

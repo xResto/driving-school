@@ -3,7 +3,7 @@
 import React from 'react';
 import { Resend } from 'resend';
 import { validateString, getErrorMessage } from '../lib/utils';
-import ContactForm from '../emails/EmailContact';
+import ContactForm from '../emails/EmailContactForm';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

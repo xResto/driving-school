@@ -25,7 +25,7 @@ const WhyWojtekImg = () => {
       style={{
         clipPath: 'polygon(0 12.8%, 100% 0%, 100% 100%, 0% 100%)',
       }}
-      className='w-[40rem] rounded-lg'
+      className='xl:w-[40rem] w-[35rem] rounded-lg'
       variants={{
         hidden: { opacity: 0, y: 25 },
         visible: { opacity: 1, y: 0 },

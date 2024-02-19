@@ -8,7 +8,7 @@ interface GrowFromLeftAnimationProps {
 }
 
 const FromLeftAnimation = ({
-  duration = 0.6,
+  duration = 0.75,
   children,
 }: GrowFromLeftAnimationProps & { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -30,7 +30,7 @@ const FromLeftAnimation = ({
         }}
         initial='hidden'
         animate={controls}
-        transition={{ duration: duration }}
+        transition={{ duration: duration, delay: .25 }}
       >
         {children}
       </motion.div>
