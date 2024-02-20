@@ -50,7 +50,7 @@ export default function Header() {
           {/* <div className='absolute z-10 px-4 w-[1200px] left-1/2 transform -translate-x-1/2 text-white mt-[101px]'> */}
           <DivOpacityAnimation>
             <div className='flex justify-center'>
-              <div className='flex gap-10 xl:p-8 p-6 text-center border-b-2 border-[#CE2029] text-lg'>
+              <div className='flex gap-10 xl:p-8 p-6 text-center border-b-2 border-[#CE2029] xl:text-lg text-base'>
                 <a
                   href='tel:607551092'
                   className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
@@ -104,7 +104,7 @@ export default function Header() {
                   </h1>
                   <p className='text-lg max-xl:w-[30rem]'>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
+                    typesetting industry. Lorem Ipsum has been the industry
                     standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                     type specimen book.
@@ -116,14 +116,14 @@ export default function Header() {
         </div>
       {/* red boxes */}
       <div
-        className='w-[34rem] h-[33rem] bg-[#CE2029] absolute bottom-[6%] right-0 rounded-lg max-[1700px]:bottom-[5.25%] max-[1600px]:bottom-[5%] max-[1500px]:bottom-[4.5%] max-[1400px]:bottom-[3.75%] max-[1300px]:bottom-[3%] max-[1200px]:bottom-[2.25%] max-[1100px]:bottom-[1.5%] max-[1000px]:bottom-[0.75%] max-[900px]:bottom-[0%] max-[800px]:bottom-[-0.75%] max-[700px]:bottom-[-1.5%] max-[600px]:bottom-[-2.25%] max-[500px]:bottom-[-3%] max-[400px]:bottom-[-3.75%] max-[300px]:bottom-[-4.5%]'
+        className='w-[34rem] h-[33rem] bg-[#CE2029] absolute bottom-[6%] right-0 rounded-lg max-[1700px]:bottom-[5.25%] max-[1600px]:bottom-[5%] max-[1500px]:bottom-[4.5%] max-[1400px]:bottom-[3.75%] max-[1300px]:bottom-[3%] max-[1200px]:bottom-[2%] max-[1100px]:bottom-[1%] max-[1000px]:bottom-[0%] max-[900px]:bottom-[-1%] max-[800px]:bottom-[-2%] max-[700px]:bottom-[-3%] max-[600px]:bottom-[-4%] max-[500px]:bottom-[-5%] max-[400px]:bottom-[-6%] max-[300px]:bottom-[-7%]'
         style={{
           // bottom: `${bottomOffset}%`,
           clipPath: 'polygon(0 0, 100% 0%, 100% 90.2%, 0% 100%)',
         }}
       ></div>
       <div
-        className='w-[50rem] h-[33rem] bg-[#990f0f] absolute z-0 bottom-[6.5%] right-0 rounded-lg max-[1700px]:bottom-[5.75%] max-[1600px]:bottom-[5%] max-[1500px]:bottom-[4.25%] max-[1400px]:bottom-[3.5%] max-[1300px]:bottom-[2.75%] max-[1200px]:bottom-[2%] max-[1100px]:bottom-[1.25%] max-[1000px]:bottom-[0.5%] max-[900px]:bottom-[-0.25%] max-[800px]:bottom-[-1%] max-[700px]:bottom-[-1.75%] max-[600px]:bottom-[-2.5%] max-[500px]:bottom-[-3.25%] max-[400px]:bottom-[-4%] max-[300px]:bottom-[-4.75%]'
+        className='w-[50rem] h-[33rem] bg-[#990f0f] absolute z-0 bottom-[6.5%] right-0 rounded-lg max-[1700px]:bottom-[5.75%] max-[1600px]:bottom-[5%] max-[1500px]:bottom-[4.25%] max-[1400px]:bottom-[3.5%] max-[1300px]:bottom-[2.75%] max-[1200px]:bottom-[1.75%] max-[1100px]:bottom-[0.75%] max-[1000px]:bottom-[-0.25%] max-[900px]:bottom-[-1.25%] max-[800px]:bottom-[-2.25%] max-[700px]:bottom-[-3.25%] max-[600px]:bottom-[4.25%] max-[500px]:bottom-[-5.25%] max-[400px]:bottom-[-6.25%] max-[300px]:bottom-[-7.25%]'
         style={{
           clipPath: 'polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%)',
         }}

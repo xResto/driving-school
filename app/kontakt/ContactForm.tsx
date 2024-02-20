@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { anton } from '../fonts';
 import { sendEmail } from '../actions/sendEmail';

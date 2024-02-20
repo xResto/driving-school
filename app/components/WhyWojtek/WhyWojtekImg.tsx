@@ -12,7 +12,7 @@ const WhyWojtekImg = () => {
     if (inView) {
       controls.start('visible');
     }
-  }, [inView]);
+  }, [inView, controls]);
 
   return (
     <motion.img

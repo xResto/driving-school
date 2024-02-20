@@ -16,7 +16,7 @@ const DivReverseOpacityAnimation = ({
     if (inView) {
       controls.start('visible');
     }
-  }, [inView]);
+  }, [inView, controls]);
 
   return (
     <div ref={ref}>
