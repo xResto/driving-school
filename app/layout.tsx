@@ -3,6 +3,7 @@ import './globals.css';
 import { roboto } from './fonts';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Szkoła Nauki Jazdy Tarnobrzeg - Wojtek',
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
