@@ -14,7 +14,7 @@ const CourseElements = () => {
             <h6 className='text-3xl font-semibold'>Wykłady</h6>
             <p className='text-lg'>
               A paint protection mask, also known as a clear bra or paint
-              protection film (PPF), is a transparent layer that is applied to
+              protection film PPF, is a transparent layer that is applied to
               the exterior of a vehicle to safeguard the paint from scratches,
               chips, and other damage.
             </p>
@@ -26,7 +26,7 @@ const CourseElements = () => {
             <h6 className='text-3xl font-semibold'>Pierwsza pomoc</h6>
             <p className='text-lg'>
               Paint correction is a professional process of restoring and
-              enhancing the appearance of a vehicle's paintwork. It involves
+              enhancing the appearance of a vehicles paintwork. It involves
               carefully removing imperfections such as swirl marks, scratches,
               oxidation, and other paint defects using specialized tools,
               compounds, and techniques.
@@ -39,9 +39,9 @@ const CourseElements = () => {
             <h6 className='text-3xl font-semibold'>Zajęcia praktyczne</h6>
             <p className='text-lg'>
               Ceramic coating, also known as nano-ceramic coating, is a
-              protective layer that is applied to a vehicle's exterior surfaces
+              protective layer that is applied to a vehicles exterior surfaces
               to provide long-lasting protection and enhancement. It is a liquid
-              polymer that chemically bonds with the vehicle's paint, creating a
+              polymer that chemically bonds with the vehicles paint, creating a
               hydrophobic and durable shield.
             </p>
           </div>
@@ -51,7 +51,7 @@ const CourseElements = () => {
           <div className='flex flex-col gap-8 w-[40rem]'>
             <h6 className='text-3xl font-semibold'>Egzamin wewnętrzny</h6>
             <p className='text-lg'>
-              This includes a thorough cleaning of the car's exterior, removing
+              This includes a thorough cleaning of the cars exterior, removing
               dirt, dust, and grime. It typically involves hand washing, using
               high-quality car wash soap, and drying the vehicle.
             </p>
