@@ -5,6 +5,7 @@ import EnvelopeIcon from '../../public/envelope-icon.svg';
 import PhoneIcon from '../../public/phone-icon.svg';
 import DivOpacityAnimation from '../components/animations/DivOpacityAnimation';
 import ContactForm from './ContactForm';
+import { anton } from '../fonts';
 
 const page = () => {
   return (
@@ -54,7 +55,7 @@ const page = () => {
               </a>
             </div>
           </div>
-          <h1 className='text-4xl font-bold mb-2'>Skontaktuj się z nami!</h1>
+          <h1 className={`${anton.className} text-4xl font-bold mb-2`}>Skontaktuj się z nami!</h1>
           <p>
             Napisz do nas wiadomość poprzez formularz kontaktowy lub na adres
             e-mail.
