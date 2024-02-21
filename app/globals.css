@@ -23,3 +23,95 @@
   -moz-box-shadow: 4px 4px 0px 0px rgba(206, 32, 41, 1);
   box-shadow: 4px 4px 0px 0px rgba(206, 32, 41, 1);
 }
+
+.clip-path-bright-red {
+  clip-path: polygon(0 0, 100% 0%, 100% 90.2%, 0% 100%);
+}
+
+.clip-path-dark-red {
+  clip-path: polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%);
+}
+
+@media screen and (max-width: 1600px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90.7%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90.9%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 91.1%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 91.3%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 91.4%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 91.5%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 91.5%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-img {
+    object-position: 40% 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-img {
+    object-position: 35% 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header-img {
+    object-position: 30% 50%;
+  }
+}
+
+/* @media screen and (max-width: 400px) {
+  .header-img {
+    object-position: 25% 50%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .header-img {
+    object-position: 20% 50%;
+  }
+} */

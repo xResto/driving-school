@@ -1,8 +1,9 @@
 'use client';
 import React from 'react';
-import { anton } from '../fonts';
 import { sendEmail } from '../actions/sendEmail';
 import DivYAnimation from '../components/animations/DivYOpacityAnimation';
+import SubmitBtn from './SubmitBtn';
+import toast from 'react-hot-toast';
 
 const requiredStar = <span className='text-[#CE2029]'>*</span>;
 
@@ -12,7 +13,17 @@ const ContactForm = () => {
       <form
         className='mt-10 flex flex-col gap-5 items-center'
         action={async (formData) => {
-          await sendEmail(formData);
+          const error = await sendEmail(formData);
+          console.log('hej', error)
+
+          if (error) {
+            toast.error(
+              'Wystąpił błąd podczas wysyłania wiadomości, spróbuj ponownie później.'
+            );
+            return;
+          }
+
+          toast.success('Wiadomość została wysłana pomyślnie!');
         }}
       >
         <div className='lg:w-1/2 w-full flex flex-col sm:flex-row justify-between gap-5'>
@@ -70,12 +81,7 @@ const ContactForm = () => {
             rows={10}
           ></textarea>
         </div>
-        <button
-          type='submit'
-          className={`${anton.className} h-[3rem] w-[8rem] text-xl bg-[#CE2029] text-white rounded-full outline-none cursor-pointer focus:bg-[#990f0f] hover:bg-[#990f0f] transform transition-all focus:scale-110 hover:scale-110 active:scale-105`}
-        >
-          Wyślij
-        </button>
+        <SubmitBtn />
       </form>
     </DivYAnimation>
   );

@@ -36,7 +36,7 @@ export const sendEmail = async (formData: FormData) => {
   }
 
   try {
-    await resend.emails.send({
+    const data = await resend.emails.send({
       from: 'Formularz kontaktowy <onboarding@resend.dev>',
       to: 'kamil.korczak7215@gmail.com',
       subject: 'Wiadomość z formularza kontaktowego',
@@ -49,9 +49,10 @@ export const sendEmail = async (formData: FormData) => {
         message: message as string,
       }),
     });
+    console.log(data);
+    return data;
   } catch (error: unknown) {
-    return {
-      error: getErrorMessage(error),
-    };
+    console.log(error);
+    return { error: getErrorMessage(error) };
   }
 };

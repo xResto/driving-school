@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import RedUnderscoreHoverAnimation from './animations/RedUnderscoreHoverAnimation';
 import { usePathname } from 'next/navigation';
+import Logo from '../../public/logo.webp'
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -25,16 +26,14 @@ const Navbar = () => {
           : {}
       }
     >
-      <div className='flex flex-row justify-between py-6 max-w-[1200px] mx-auto'>
+      <div className='flex flex-row justify-between py-5 max-w-[1200px] mx-auto'>
         <div className='text-3xl font-bold'>
           <Link href='/'>
             <Image
-              src='/wojtek.webp'
-              width={500}
-              height={203}
+              src={Logo}
               priority={true}
               alt='Logo OSK WOJTEK'
-              className='w-32'
+              className='w-36'
             />
           </Link>
         </div>
