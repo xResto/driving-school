@@ -29,12 +29,12 @@
 }
 
 .clip-path-dark-red {
-  clip-path: polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 90.7%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 89.2%, 0% 100%);
   }
 
   .clip-path-dark-red {
@@ -42,25 +42,37 @@
   }
 }
 
-@media screen and (max-width: 1500px) {
-  .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 90.9%, 0% 100%);
-  }
-
+@media screen and (max-width: 1600px) {
   .clip-path-dark-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 84.5%, 0% 100%);
   }
 }
 
 @media screen and (max-width: 1400px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 91.1%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 89.7%, 0% 100%);
   }
 }
 
 @media screen and (max-width: 1300px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 91.3%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 85.7%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90.1%, 0% 100%);
   }
 
   .clip-path-dark-red {
@@ -68,21 +80,123 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 850px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 91.4%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 85.7%, 0% 100%);
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 91.5%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90.5%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 86.8%, 0% 100%);
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 91.5%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90.6%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90.5%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 86.5%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 89.7%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90.7%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 90.5%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 89.2%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .clip-path-bright-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 88.5%, 0% 100%);
+  }
+
+  .clip-path-dark-red {
+    clip-path: polygon(0 0, 100% 0%, 100% 84.5%, 0% 100%);
   }
 }
 

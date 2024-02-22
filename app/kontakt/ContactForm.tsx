@@ -13,10 +13,11 @@ const ContactForm = () => {
       <form
         className='mt-10 flex flex-col gap-5 items-center'
         action={async (formData) => {
-          const error = await sendEmail(formData);
-          console.log('hej', error)
-
-          if (error) {
+          const res = await sendEmail(formData);
+          console.log('data', (res as any).data);
+          console.log('error', (res as any).error);
+          
+          if ((res as any).error) {
             toast.error(
               'Wystąpił błąd podczas wysyłania wiadomości, spróbuj ponownie później.'
             );

@@ -32,7 +32,7 @@ const EmailContactForm = ({
           <Body className='bg-white font-sans'>
             <Container className='p-8 rounded-lg shadow-lg'>
               <Section>
-                <Heading>
+                <Heading className='text-black'>
                   Otrzymano nową wiadomość z formularza kontaktowego
                 </Heading>
                 <Text>

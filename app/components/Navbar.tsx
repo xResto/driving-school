@@ -37,7 +37,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className='flex gap-10 items-center text-lg'>
+        <ul className='flex gap-10 items-center text-lg max-md:hidden'>
           <Link
             href='/'
             className={`${

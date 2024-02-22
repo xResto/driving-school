@@ -49,10 +49,10 @@ export const sendEmail = async (formData: FormData) => {
         message: message as string,
       }),
     });
-    console.log(data);
+    console.log('data', data);
     return data;
   } catch (error: unknown) {
-    console.log(error);
-    return { error: getErrorMessage(error) };
+    console.log('error', error);
+    return getErrorMessage(error);
   }
 };
