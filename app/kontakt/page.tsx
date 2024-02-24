@@ -10,7 +10,7 @@ import ContactForm from './ContactForm';
 import { anton } from '../fonts';
 import { useMainContext } from '../components/store/MainContext';
 
-const page = () => {
+const Page = () => {
   const { isMenuOpen } = useMainContext();
 
   return (
@@ -107,4 +107,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
