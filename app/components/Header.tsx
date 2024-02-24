@@ -59,10 +59,10 @@ export default function Header() {
         </DivOpacityAnimation>
         <DivOpacityAnimation>
           <FromLeftAnimation>
-            <div className='flex items-center 2xl:mt-52 2xl:-ml-[12rem] xl:-ml-[4rem] xl:mt-32 max-xl:gap-10 lg:-ml-[8rem] lg:mt-20 mx-auto mt-10'>
+            <div className='flex max-lg:flex-col items-center 2xl:mt-52 2xl:-ml-[12rem] xl:-ml-[4rem] xl:mt-32 max-xl:gap-10 lg:-ml-[8rem] lg:mt-20 mx-auto mt-10'>
               <div className='flex flex-col max-lg:items-center max-lg:text-center'>
                 <h1
-                  className={`${anton.className} text-6xl font-bold mb-4 xl:w-[54rem] max-xl:text-5xl`}
+                  className={`${anton.className} text-6xl mb-4 xl:w-[54rem] max-xl:text-5xl`}
                 >
                   Zdaj na prawo jazdy z OSK WOJTEK
                 </h1>
@@ -91,9 +91,9 @@ export default function Header() {
       <div
         className='clip-path-dark-red w-[50rem] h-[34rem] bg-[#990f0f] absolute z-0 bottom-[6.5%] right-0 rounded-lg
         max-[1700px]:bottom-[5.75%] max-[1600px]:w-[47rem] max-[1500px]:w-[43rem] max-[1400px]:w-[40rem] max-[1300px]:w-[37rem] max-[1200px]:w-[34rem]
-        max-[1100px]:w-[31rem] max-[1000px]:w-[28rem] max-[900px]:w-[25rem] max-[800px]:w-[22rem] max-[700px]:w-[19rem] max-[700px]:bottom-[6%]
+        max-[1100px]:w-[31rem] max-[1000px]:w-[28rem] max-[900px]:w-[25rem] max-[800px]:w-[22rem] max-[700px]:w-[19rem] max-[700px]:bottom-[6%] max-[650px]:bottom-[5.5%]
         max-[600px]:w-[16rem] max-[600px]:bottom-[6%] max-[550px]:bottom-[5.5%] max-[500px]:w-[13rem] max-[500px]:bottom-[6%] max-[450px]:bottom-[5.5%]
-         max-[400px]:w-[10rem] max-[400px]:bottom-[6.25%] max-[350px]:bottom-[5.5%]'
+        max-[400px]:w-[10rem] max-[400px]:bottom-[6.25%] max-[350px]:bottom-[5.5%]'
       ></div>
 
       <Image

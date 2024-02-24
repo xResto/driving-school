@@ -112,21 +112,21 @@
 
 @media screen and (max-width: 700px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 90.6%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90.4%, 0% 100%);
   }
 
   .clip-path-dark-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 86.7%, 0% 100%);
   }
 }
 
 @media screen and (max-width: 650px) {
   .clip-path-bright-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 89.5%, 0% 100%);
   }
 
   .clip-path-dark-red {
-    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85.5%, 0% 100%);
   }
 }
 

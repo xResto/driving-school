@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import EnvelopeIcon from '../../public/envelope-icon.svg';
@@ -6,12 +8,22 @@ import MapPin from '../../public/map-pin.svg';
 import DivOpacityAnimation from '../components/animations/DivOpacityAnimation';
 import ContactForm from './ContactForm';
 import { anton } from '../fonts';
+import { useMainContext } from '../components/store/MainContext';
 
 const page = () => {
+  const { isMenuOpen } = useMainContext();
+
   return (
     <div className='max-w-[1500px] mx-auto lg:px-0 md:px-20 sm:px-10 px-6'>
-      <DivOpacityAnimation>
-        <div className='lg:w-1/2 w-full flex flex-col items-center justify-center mx-auto gap-1 text-center text-lg'>
+      <div
+        className='lg:w-1/2 w-full flex flex-col items-center justify-center mx-auto gap-1 text-center text-lg'
+        style={
+          isMenuOpen
+            ? { position: 'relative', zIndex: '-10' }
+            : { position: 'static', zIndex: '0' }
+        }
+      >
+        <DivOpacityAnimation>
           <div className='w-full flex justify-center mb-6'>
             <div className='w-full sm:flex gap-10 max-[1093px]:gap-5 max-lg:gap-10 max-sm:gap-5 grid grid-cols-2 p-8 justify-center text-center border-b-2 border-[#191919] font-medium'>
               <a
@@ -59,7 +71,7 @@ const page = () => {
               </div> */}
             </div>
           </div>
-          <h1 className={`${anton.className} text-4xl font-bold mb-2`}>
+          <h1 className={`${anton.className} text-4xl mb-2`}>
             Skontaktuj się z nami!
           </h1>
           <p>
@@ -80,8 +92,8 @@ const page = () => {
             &nbsp;(ul.Zwierzyniecka 18) możliwe jedynie po wcześniejszym
             umówieniu telefonicznym.
           </p>
-        </div>
-      </DivOpacityAnimation>
+        </DivOpacityAnimation>
+      </div>
       <ContactForm />
       <DivOpacityAnimation>
         <iframe

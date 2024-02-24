@@ -23,7 +23,7 @@ const AboutUs = () => {
       <div className='bg-[#f5f5f5] py-20 relative'>
         <div className='max-w-[1400px] mx-auto relative z-10'>
           <h3
-            className={`${anton.className} lg:pb-20 pb-10 text-center font-bold text-5xl`}
+            className={`${anton.className} lg:pb-20 pb-10 text-center text-5xl`}
           >
             Co nas wyróżnia
           </h3>

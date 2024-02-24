@@ -24,7 +24,7 @@ export default function WhyWojtek() {
 
           <div className='flex flex-col max-lg:gap-10 max-lg:text-center justify-evenly max-lg:w-[36rem]'>
             <DivOpacityAnimation>
-              <h2 className={`${anton.className} text-6xl lg:text-6xl max-[1103px]:text-5xl font-bold`}>
+              <h2 className={`${anton.className} text-6xl lg:text-6xl max-[1103px]:text-5xl`}>
                 Dlaczego WOJTEK
               </h2>
             </DivOpacityAnimation>

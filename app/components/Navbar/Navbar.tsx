@@ -1,14 +1,24 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import RedUnderscoreHoverAnimation from './animations/RedUnderscoreHoverAnimation';
+import RedUnderscoreHoverAnimation from '../animations/RedUnderscoreHoverAnimation';
 import { usePathname } from 'next/navigation';
-import Logo from '../../public/logo.webp'
+import Logo from '../../../public/logo.webp';
+import Hamburger from './Hamburger';
+import { useMainContext } from '../store/MainContext';
 
 const Navbar = () => {
+  const { isMenuOpen, setIsMenuOpen } = useMainContext();
+
   const pathname = usePathname();
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  }, [pathname]);
 
   return (
     <nav
@@ -26,22 +36,27 @@ const Navbar = () => {
           : {}
       }
     >
-      <div className='flex flex-row justify-between py-5 max-w-[1200px] mx-auto'>
+      <div className='flex flex-row justify-between items-center py-5 max-w-[1200px] mx-auto'>
         <div className='text-3xl font-bold'>
           <Link href='/'>
             <Image
               src={Logo}
               priority={true}
               alt='Logo OSK WOJTEK'
-              className='w-36'
+              className='md:w-36 w-28'
             />
           </Link>
         </div>
-        <ul className='flex gap-10 items-center text-lg max-md:hidden'>
+        <Hamburger />
+        <ul
+          className={`${
+            isMenuOpen ? '' : 'max-md:hidden'
+          } flex gap-10 items-center text-lg max-md:fixed max-md:z-[100] max-md:top-[5.4rem] max-md:left-0 max-md:bg-[#111111] max-md:w-full max-md:flex-col max-md:gap-0`}
+        >
           <Link
             href='/'
-            className={`${
-              pathname === '/' ? 'border-b-2 border-[#CE2029]' : ''
+            className={`max-md:w-full text-center max-md:py-4 ${
+              pathname === '/' ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]' : ''
             }`}
           >
             <RedUnderscoreHoverAnimation currentPath={pathname} thisPath='/'>
@@ -50,9 +65,9 @@ const Navbar = () => {
           </Link>
           <Link
             href='/jak-zaczac-kurs'
-            className={`${
+            className={`max-md:w-full text-center max-md:py-4 ${
               pathname === '/jak-zaczac-kurs'
-                ? 'border-b-2 border-[#CE2029]'
+                ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]'
                 : ''
             }`}
           >
@@ -65,8 +80,8 @@ const Navbar = () => {
           </Link>
           <Link
             href='/cennik'
-            className={`${
-              pathname === '/cennik' ? 'border-b-2 border-[#CE2029]' : ''
+            className={`max-md:w-full text-center max-md:py-4 ${
+              pathname === '/cennik' ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]' : ''
             }`}
           >
             <RedUnderscoreHoverAnimation
@@ -79,8 +94,8 @@ const Navbar = () => {
 
           <Link
             href='/kontakt'
-            className={`${
-              pathname === '/kontakt' ? 'border-b-2 border-[#CE2029]' : ''
+            className={`max-md:w-full text-center max-md:py-4 ${
+              pathname === '/kontakt' ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]' : ''
             }`}
           >
             <RedUnderscoreHoverAnimation

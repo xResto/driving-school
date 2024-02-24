@@ -24,7 +24,7 @@ const RedUnderscoreHoverAnimation = ({
         <motion.div
           variants={variants}
           transition={{ duration: 0.4 }}
-          className='absolute bottom-0 left-0 border-b-2 border-[#CE2029]'
+          className='absolute bottom-0 left-0 border-b-2 border-[#CE2029] max-md:hidden'
         />
       )}
     </motion.li>
