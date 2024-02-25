@@ -19,14 +19,15 @@ const AdditionalCardsWrapper = () => {
         <PriceCard
           heading='Wykłady - Kat. B'
           price='300 zł'
-          color='bg-[#191919]'
+          color='bg-[#313131]'
           content={lectures}
         />
         <PriceCard
           heading='Jazdy uzupełniające'
           price='100 zł/h'
-          color='bg-[#191919]'
+          color='bg-[#313131]'
           content={additionalPractice}
+          additionalPText='80 zł/h dla naszych kursantów!'
         />
       </div>
     </DivYAnimation>

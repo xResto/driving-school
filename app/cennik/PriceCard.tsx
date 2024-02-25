@@ -4,7 +4,7 @@ interface PriceCardProps {
   heading: string;
   price: string;
   color: string;
-  additionalP?: boolean;
+  additionalPText?: string;
   content?: string[];
 }
 
@@ -12,7 +12,7 @@ const PriceCard = ({
   heading,
   price,
   color,
-  additionalP = false,
+  additionalPText,
   content,
 }: PriceCardProps) => {
   return (
@@ -22,7 +22,7 @@ const PriceCard = ({
       >
         <div className='max-w-[16rem]'>
           <h2 className='py-3 text-2xl sm:text-3xl font-semibold'>{heading}</h2>
-          {additionalP && <p className='text-sm sm:text-base'>Ukończ jazdy w 2 tygodnie!</p>}
+          {additionalPText && <p className='text-sm sm:text-base'>{additionalPText}</p>}
         </div>
         <h3 className='text-2xl sm:text-3xl font-bold'>{price}</h3>
       </div>

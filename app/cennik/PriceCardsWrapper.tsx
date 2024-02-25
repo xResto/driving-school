@@ -22,14 +22,13 @@ const PriceCardsWrapper = () => {
           heading='Kategoria B'
           price='2400 zł'
           color='bg-[#CE2029]'
-          additionalP={false}
           content={basicCourse}
         />
         <PriceCard
           heading='Kat. B - kurs przyśpieszony'
           price='3000 zł'
           color='bg-[#990f0f]'
-          additionalP={true}
+          additionalPText='Ukończ jazdy w 2 tygodnie!'
           content={expressCourse}
         />
       </div>
