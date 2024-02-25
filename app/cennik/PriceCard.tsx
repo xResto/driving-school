@@ -16,7 +16,7 @@ const PriceCard = ({
   content,
 }: PriceCardProps) => {
   return (
-    <div className='border border-[#191919] rounded-2xl max-w-[30rem]'>
+    <div className='border border-[#191919] rounded-2xl min-[528px]:w-full max-w-[30rem]'>
       <div
         className={`flex justify-between items-center gap-2 px-5 sm:px-10 sm:gap-5 h-32 sm:h-40 ${color} rounded-t-2xl text-white`}
       >

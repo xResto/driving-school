@@ -22,11 +22,15 @@ const PaymentMethods = () => {
             text={['Biuro, ul. Zwierzyniecka 18']}
             imgSrc={CashPayment}
             objectPosition='object-top'
+            cardHeight='h-[21rem]'
+            cardWidth='min-[528px]:w-[30rem] w-full'
           />
           <CardWithPhoto
             header='Płatność przelewem'
             text={['Numer rachunku:', '10 1020 4913 0000 9902 0208 6403']}
             imgSrc={OnlinePayment}
+            cardHeight='h-[21rem]'
+            cardWidth='min-[528px]:w-[30rem] w-full'
           />
         </div>
       </DivYAnimation>
