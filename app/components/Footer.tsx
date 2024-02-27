@@ -8,11 +8,11 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='bg-[#191919] text-white w-full flex flex-col items-center justify-center py-4'>
+    <footer className='bg-[#191919] text-white w-full flex flex-col items-center justify-center py-4 xl:px-0 sm:px-10 px-5'>
       <div className='w-full text-base'>
-        <div className='max-w-[1200px] mx-auto mt-4'>
+        <div className='2xl:max-w-[1200px] xl:max-w-[1000px] lg:max-w-[800px] sm:max-w-[600px] w-full mx-auto mt-4'>
           <h6 className='text-3xl border-l-2 border-[#CE2029] pl-4'>Kontakt</h6>
-          <div className='flex justify-between w-full pt-12'>
+          <div className='flex sm:flex-row flex-col sm:items-stretch items-center sm:gap-0 gap-10 justify-between w-full pt-12'>
             <div className='flex gap-3 text-center leading-5'>
               <div className='flex flex-col gap-6 justify-center items-center'>
                 <Image
@@ -56,8 +56,12 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-20'>
-              <div className='flex flex-col justify-between justify-self-end'>
+            <div className='sm:hidden max-w-80 -mt-5 text-center'>
+            * Wizyty w biurze możliwe jedynie po wcześniejszym umówieniu
+            telefonicznym.
+          </div>
+            <div className='flex sm:gap-20 gap-6 sm:mb-0 mb-8'>
+              <div className='flex flex-col sm:gap-0 gap-2 justify-between justify-self-end'>
                 <Link
                   href='/'
                   className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
@@ -92,7 +96,7 @@ const Footer = () => {
               <a
                 href='https://www.facebook.com/profile.php?id=100057127253023'
                 target='_blank'
-                className='h-10 self-center'
+                className='h-10 self-center hover:scale-110 transform transition-all'
               >
                 <Image
                   className='w-10'
@@ -102,13 +106,13 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className='pt-5 pb-12'>
+          <div className='hidden sm:block pt-5 pb-12 lg:w-full max-w-80'>
             * Wizyty w biurze możliwe jedynie po wcześniejszym umówieniu
             telefonicznym.
           </div>
         </div>
       </div>
-      <p className='opacity-80 text-sm'>
+      <p className='opacity-80 sm:text-sm text-xs text-center'>
         &copy; 2024 OSK WOJTEK | Wszelkie prawa zastrzeżone
       </p>
     </footer>
