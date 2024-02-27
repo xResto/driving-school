@@ -20,7 +20,7 @@ const CardWithPhoto = ({
   objectPosition = 'object-center',
   textAlignment = 'center',
   cardWidth = 'max-[528px]:max-w-[30rem] min-[528px]:w-[30rem]',
-  cardHeight = 'min-[1546px]:h-[26rem] min-[1339px]:h-[32rem] min-[795px]:h-[27rem] max-h-[32rem]',
+  cardHeight = 'min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[26rem] max-h-[34rem]',
   photoHeight = 'h-1/2',
   placeSelf = '',
 }: CardWithPhotoProps) => {
@@ -35,11 +35,11 @@ const CardWithPhoto = ({
         loading='lazy'
       />
       <div className='flex flex-col h-1/2'>
-        <p className='my-2 ml-2 pb-2 border-b-2 border-[#CE2029] text-center font-semibold'>
+        <p className='my-2 pb-2 border-b-2 border-[#CE2029] text-center font-semibold'>
           {header}
         </p>
         {text.map((t, i) => (
-          <p key={i} className={`pb-1 ml-2 text-lg text-${textAlignment} px-1`}>
+          <p key={i} className={`pb-1 text-lg text-${textAlignment} px-1`}>
             {t}
           </p>
         ))}

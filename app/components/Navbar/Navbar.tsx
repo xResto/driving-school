@@ -91,7 +91,19 @@ const Navbar = () => {
               Cennik
             </RedUnderscoreHoverAnimation>
           </Link>
-
+          <Link
+            href='/galeria'
+            className={`max-md:w-full text-center max-md:py-4 ${
+              pathname === '/galeria' ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]' : ''
+            }`}
+          >
+            <RedUnderscoreHoverAnimation
+              currentPath={pathname}
+              thisPath='/galeria'
+            >
+              Galeria
+            </RedUnderscoreHoverAnimation>
+          </Link>
           <Link
             href='/kontakt'
             className={`max-md:w-full text-center max-md:py-4 ${

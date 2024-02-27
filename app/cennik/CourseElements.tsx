@@ -26,7 +26,7 @@ const CourseElements = () => {
             imgSrc={Lecture}
             textAlignment='left'
             cardWidth='min-[1101px]:max-w-[30rem] min-[795px]:max-w-[27rem] max-w-[30rem]'
-            cardHeight = 'min-[1546px]:h-[26rem] min-[1339px]:h-[32rem] min-[795px]:h-[21rem] max-h-[32rem]'
+            cardHeight = 'min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[21rem] max-h-[32rem]'
             photoHeight='max-h-[9rem] min-[1339px]:h-1/3 min-[795px]:h-1/2 h-1/3'
             placeSelf='max-[794px]:place-self-center min-[1339px]:place-self-center max-[1339px]:place-self-end'
           />
@@ -38,7 +38,7 @@ const CourseElements = () => {
             imgSrc={FirstAid}
             textAlignment='left'
             cardWidth='min-[1101px]:max-w-[30rem] min-[795px]:max-w-[27rem] max-w-[30rem]'
-            cardHeight = 'min-[1546px]:h-[26rem] min-[1339px]:h-[32rem] min-[795px]:h-[21rem] max-h-[32rem]'
+            cardHeight = 'min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[21rem] max-h-[32rem]'
             photoHeight='max-h-[9rem] min-[1339px]:h-1/3 min-[795px]:h-1/2 h-1/3'
             placeSelf='max-[794px]:place-self-center min-[1339px]:place-self-center max-[1339px]:place-self-start'
           />

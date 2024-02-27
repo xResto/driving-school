@@ -21,6 +21,7 @@ const AdditionalCardsWrapper = () => {
           price='300 zł'
           color='bg-[#313131]'
           content={lectures}
+          priceWidth='max-[360px]:w-10'
         />
         <PriceCard
           heading='Jazdy uzupełniające'
@@ -28,6 +29,7 @@ const AdditionalCardsWrapper = () => {
           color='bg-[#313131]'
           content={additionalPractice}
           additionalPText='80 zł/h dla naszych kursantów!'
+          priceWidth='max-[424px]:w-10'
         />
       </div>
     </DivYAnimation>

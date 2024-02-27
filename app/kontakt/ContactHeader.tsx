@@ -23,7 +23,7 @@ const ContactHeader = () => {
     >
       <DivOpacityAnimation>
         <div className='w-full flex justify-center mb-6'>
-          <div className='w-full sm:flex gap-10 max-[1093px]:gap-5 max-lg:gap-10 max-sm:gap-5 grid grid-cols-2 p-8 justify-center text-center border-b-2 border-[#191919] font-medium'>
+          <div className='w-full sm:flex gap-10 max-[1093px]:gap-5 max-lg:gap-10 max-sm:gap-5 grid grid-cols-2 sm:py-8 py-4 justify-center text-center min-[431px]:text-base text-sm border-b-2 border-[#191919] font-medium'>
             <a
               href='tel:607551092'
               className='text-[#CE2029] focus:text-[#990f0f] hover:text-[#990f0f] transform transition-all justify-self-end'

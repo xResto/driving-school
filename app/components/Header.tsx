@@ -74,7 +74,7 @@ export default function Header() {
                   specimen book.
                 </p>
               </div>
-              <div className='flex items-center justify-center bg-[#2a2ac2] text-9xl font-bold size-40 rounded border-2 border-white'>
+              <div className='flex items-center justify-center bg-[#2a2ac2] text-9xl font-bold size-40 rounded border-4 border-white'>
                 L
               </div>
             </div>
