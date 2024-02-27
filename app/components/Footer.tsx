@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='bg-[#191919] w-full text-[#fff5f5] flex flex-col items-center justify-center py-4'>
+    <footer className='bg-[#191919] text-white w-full flex flex-col items-center justify-center py-4'>
       <div className='w-full text-base'>
         <div className='max-w-[1200px] mx-auto mt-4'>
           <h6 className='text-3xl border-l-2 border-[#CE2029] pl-4'>Kontakt</h6>
@@ -58,13 +58,42 @@ const Footer = () => {
             </div>
             <div className='flex gap-20'>
               <div className='flex flex-col justify-between justify-self-end'>
-                <Link href='/'>Strona główna</Link>
-                <Link href='/jak-zaczac-kurs'>Jak zacząć kurs?</Link>
-                <Link href='/cennik'>Cennik</Link>
-                <Link href='/galeria'>Galeria</Link>
-                <Link href='/kontakt'>Kontakt</Link>
+                <Link
+                  href='/'
+                  className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
+                >
+                  Strona główna
+                </Link>
+                <Link
+                  href='/jak-zaczac-kurs'
+                  className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
+                >
+                  Jak zacząć kurs?
+                </Link>
+                <Link
+                  href='/cennik'
+                  className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
+                >
+                  Cennik
+                </Link>
+                <Link
+                  href='/galeria'
+                  className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
+                >
+                  Galeria
+                </Link>
+                <Link
+                  href='/kontakt'
+                  className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
+                >
+                  Kontakt
+                </Link>
               </div>
-              <a href='https://www.facebook.com/profile.php?id=100057127253023' target='_blank' className='h-10 self-center'>
+              <a
+                href='https://www.facebook.com/profile.php?id=100057127253023'
+                target='_blank'
+                className='h-10 self-center'
+              >
                 <Image
                   className='w-10'
                   src={FacebookIcon}
@@ -79,7 +108,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className='opacity-80 text-sm'>&copy; 2024 OSK WOJTEK | Wszelkie prawa zastrzeżone</p>
+      <p className='opacity-80 text-sm'>
+        &copy; 2024 OSK WOJTEK | Wszelkie prawa zastrzeżone
+      </p>
     </footer>
   );
 };
