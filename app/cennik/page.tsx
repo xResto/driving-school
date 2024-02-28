@@ -2,7 +2,6 @@ import React from 'react';
 import PriceCardsWrapper from './PriceCardsWrapper';
 import DivOpacityAnimation from '../components/animations/DivOpacityAnimation';
 import AdditionalCardsWrapper from './AdditionalCardsWrapper';
-import CourseElements2 from './CourseElements2';
 import { anton } from '../fonts';
 import PaymentMethods from './PaymentMethods';
 import CourseElements from './CourseElements';
