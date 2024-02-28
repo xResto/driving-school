@@ -16,20 +16,20 @@ const PaymentMethods = () => {
         </h5>
       </DivYAnimation>
       <DivYAnimation>
-        <div className='flex justify-center max-[1100px]:flex-col max-[1100px]:items-center mx-auto gap-10 pb-20 px-6 sm:px-0'>
+        <div className='flex justify-center max-[1100px]:flex-col max-[1100px]:items-center mx-auto gap-10 pb-20 min-[426px]:px-6 px-4 sm:px-0'>
           <CardWithPhoto
             header='Płatność gotówką'
             text={['Biuro, ul. Zwierzyniecka 18']}
             imgSrc={CashPayment}
             objectPosition='object-top'
-            cardHeight='h-[21rem]'
+            cardHeight='min-[426px]:h-[21rem] h-[18rem]'
             cardWidth='min-[528px]:w-[30rem] w-full'
           />
           <CardWithPhoto
             header='Płatność przelewem'
             text={['Numer rachunku:', '10 1020 4913 0000 9902 0208 6403']}
             imgSrc={OnlinePayment}
-            cardHeight='h-[21rem]'
+            cardHeight='min-[426px]:h-[21rem] h-[18rem]'
             cardWidth='min-[528px]:w-[30rem] w-full'
           />
         </div>

@@ -11,6 +11,7 @@ interface CardWithPhotoProps {
   cardHeight?: string;
   photoHeight?: string;
   placeSelf?: string;
+  pTextSize?: string;
 }
 
 const CardWithPhoto = ({
@@ -23,10 +24,11 @@ const CardWithPhoto = ({
   cardHeight = 'min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[26rem] max-h-[34rem]',
   photoHeight = 'h-1/2',
   placeSelf = '',
+  pTextSize = 'min-[426px]:text-lg text-base',
 }: CardWithPhotoProps) => {
   return (
     <div
-      className={`border border-[#191919] rounded-2xl ${cardHeight} ${cardWidth} ${placeSelf} p-2 bg-[#313131] text-white text-2xl`}
+      className={`border border-[#191919] rounded-2xl ${cardHeight} ${cardWidth} ${placeSelf} p-2 bg-[#313131] text-white min-[426px]:text-2xl text-xl`}
     >
       <Image
         src={imgSrc}
@@ -39,7 +41,7 @@ const CardWithPhoto = ({
           {header}
         </p>
         {text.map((t, i) => (
-          <p key={i} className={`pb-1 text-lg text-${textAlignment} px-1`}>
+          <p key={i} className={`pb-1 px-1 ${pTextSize} text-${textAlignment}`}>
             {t}
           </p>
         ))}

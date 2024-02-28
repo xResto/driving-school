@@ -9,7 +9,7 @@ import Exam from '../../public/exam.webp';
 
 const CourseElements = () => {
   return (
-    <div className='px-6 mx-auto'>
+    <div className='min-[426px]:px-6 px-4 mx-auto'>
       <DivYAnimation>
         <h5 className={`${anton.className} pb-14 mx-auto text-center text-4xl`}>
           Co zawiera kurs?
@@ -26,9 +26,10 @@ const CourseElements = () => {
             imgSrc={Lecture}
             textAlignment='left'
             cardWidth='min-[1101px]:max-w-[30rem] min-[795px]:max-w-[27rem] max-w-[30rem]'
-            cardHeight = 'min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[21rem] max-h-[32rem]'
+            cardHeight='min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[21rem] max-h-[32rem]'
             photoHeight='max-h-[9rem] min-[1339px]:h-1/3 min-[795px]:h-1/2 h-1/3'
             placeSelf='max-[794px]:place-self-center min-[1339px]:place-self-center max-[1339px]:place-self-end'
+            pTextSize='min-[426px]:text-lg text-base'
           />
           <CardWithPhoto
             header='Pierwsza pomoc'
@@ -38,9 +39,10 @@ const CourseElements = () => {
             imgSrc={FirstAid}
             textAlignment='left'
             cardWidth='min-[1101px]:max-w-[30rem] min-[795px]:max-w-[27rem] max-w-[30rem]'
-            cardHeight = 'min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[21rem] max-h-[32rem]'
+            cardHeight='min-[1499px]:h-[26rem] min-[1339px]:h-[30rem] min-[795px]:h-[21rem] max-h-[32rem]'
             photoHeight='max-h-[9rem] min-[1339px]:h-1/3 min-[795px]:h-1/2 h-1/3'
             placeSelf='max-[794px]:place-self-center min-[1339px]:place-self-center max-[1339px]:place-self-start'
+            pTextSize='min-[426px]:text-lg text-base'
           />
           <CardWithPhoto
             header='Zajęcia praktyczne'
@@ -55,6 +57,7 @@ const CourseElements = () => {
             cardWidth='min-[1101px]:max-w-[30rem] min-[795px]:max-w-[27rem] max-w-[30rem]'
             photoHeight='max-h-[9rem] h-1/3'
             placeSelf='max-[794px]:place-self-center min-[1339px]:place-self-center max-[1339px]:place-self-end'
+            pTextSize='min-[426px]:text-lg text-base'
           />
           <CardWithPhoto
             header='Egzamin wewnętrzny'
@@ -69,6 +72,7 @@ const CourseElements = () => {
             cardWidth='min-[1101px]:max-w-[30rem] min-[795px]:max-w-[27rem] max-w-[30rem]'
             photoHeight='max-h-[9rem] h-1/3'
             placeSelf='max-[794px]:place-self-center min-[1339px]:place-self-center max-[1339px]:place-self-start'
+            pTextSize='min-[426px]:text-lg text-base'
           />
         </div>
       </DivYAnimation>

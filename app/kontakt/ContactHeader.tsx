@@ -14,7 +14,7 @@ const ContactHeader = () => {
 
   return (
     <div
-      className='lg:w-1/2 w-full flex flex-col items-center justify-center mx-auto gap-1 text-center text-lg'
+      className='lg:w-1/2 w-full flex flex-col items-center justify-center mx-auto gap-1 text-center min-[426px]:text-lg text-base'
       style={
         isMenuOpen
           ? { position: 'relative', zIndex: '-10' }
