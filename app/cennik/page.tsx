@@ -11,7 +11,7 @@ const Cennik = () => {
     <>
       <div className='bg-[#191919] rounded-b-3xl text-white pb-20 max-md:relative max-md:-z-10'>
         <DivOpacityAnimation>
-          <div className='mx-auto text-center py-28 px-6 max-w-[40rem]'>
+          <div className='mx-auto text-center py-28 min-[426px]:px-6 px-4 max-w-[40rem]'>
             <h1 className={`${anton.className} text-4xl sm:text-6xl`}>
               Cennik kursów na prawo jazdy
             </h1>

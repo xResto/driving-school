@@ -1,9 +1,7 @@
 import React from 'react';
 import { anton } from '../fonts';
-import Image from 'next/image';
 import OnlinePayment from '../../public/online-payment.webp';
 import CashPayment from '../../public/cash-payment.webp';
-import MapPin from '../../public/map-pin.svg';
 import DivYAnimation from '../components/animations/DivYOpacityAnimation';
 import CardWithPhoto from './CardWithPhoto';
 

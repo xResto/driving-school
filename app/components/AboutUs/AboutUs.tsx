@@ -19,11 +19,11 @@ const text4 =
 
 const AboutUs = () => {
   return (
-    <div className='pb-44 max-lg:pt-44 bg-[#f5f5f5]'>
+    <div className='lg:pb-44 pb-20 max-lg:pt-44 bg-[#f5f5f5]'>
       <div className='bg-[#f5f5f5] py-20 relative'>
         <div className='max-w-[1400px] mx-auto relative z-10'>
           <h3
-            className={`${anton.className} lg:pb-20 pb-10 text-center text-5xl`}
+            className={`${anton.className} lg:pb-20 pb-10 text-center sm:text-5xl text-4xl`}
           >
             Co nas wyróżnia
           </h3>

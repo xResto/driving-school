@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-white px-6 ${
+      className={`text-white md:px-4 min-[801px]:px-6 px-6 ${
         pathname === '/'
           ? 'sticky top-0 z-[100] backdrop-blur-lg border-b-[.5px] border-gray-400 '
           : 'static bg-[#191919] backdrop-blur-none '
@@ -51,7 +51,7 @@ const Navbar = () => {
         <ul
           className={`${
             isMenuOpen ? '' : 'max-md:hidden'
-          } flex gap-10 items-center text-lg max-md:fixed max-md:z-[100] max-md:top-[5.4rem] max-md:left-0 max-md:bg-[#111111] max-md:w-full max-md:flex-col max-md:gap-0`}
+          } flex md:gap-6 gap-0 items-center text-lg max-md:fixed max-md:z-[100] max-md:top-[5.4rem] max-md:left-0 max-md:bg-[#111111] max-md:w-full max-md:flex-col`}
         >
           <Link
             href='/'
@@ -75,7 +75,7 @@ const Navbar = () => {
               currentPath={pathname}
               thisPath='/jak-zaczac-kurs'
             >
-              Jak zacząć kurs?
+              Jak zacząć kurs
             </RedUnderscoreHoverAnimation>
           </Link>
           <Link

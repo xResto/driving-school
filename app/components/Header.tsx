@@ -11,7 +11,6 @@ export default function Header() {
   return (
     <main className='relative -top-[101px] bg-[#f5f5f5] flex justify-center'>
       <div className='absolute z-10 px-4 flex flex-col justify-center items-center text-white mt-[101px] max-w-[1200px]'>
-        {/* <div className='absolute z-10 px-4 w-[1200px] left-1/2 transform -translate-x-1/2 text-white mt-[101px]'> */}
         <DivOpacityAnimation>
           <div className='flex justify-center'>
             <div className='flex gap-10 xl:p-8 p-6 text-center border-b-2 border-[#CE2029] xl:text-lg text-base'>
@@ -59,14 +58,14 @@ export default function Header() {
         </DivOpacityAnimation>
         <DivOpacityAnimation>
           <FromLeftAnimation>
-            <div className='flex max-lg:flex-col items-center 2xl:mt-52 2xl:-ml-[12rem] xl:-ml-[4rem] xl:mt-32 max-xl:gap-10 lg:-ml-[8rem] lg:mt-20 mx-auto mt-10'>
+            <div className='flex max-lg:flex-col items-center 2xl:mt-52 2xl:-ml-[12rem] xl:-ml-[4rem] xl:mt-32 mx-auto mt-24 xl:gap-10 gap-4'>
               <div className='flex flex-col max-lg:items-center max-lg:text-center'>
                 <h1
-                  className={`${anton.className} text-6xl mb-4 xl:w-[54rem] max-xl:text-5xl`}
+                  className={`${anton.className} xl:text-6xl text-5xl mb-4 `}
                 >
                   Zdaj na prawo jazdy z OSK WOJTEK
                 </h1>
-                <p className='text-lg max-xl:w-[40rem] w-[50rem]'>
+                <p className='sm:text-lg text-base xl:max-w-[50rem] max-w-[40rem]'>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry
                   standard dummy text ever since the 1500s, when an unknown

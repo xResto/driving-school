@@ -2,12 +2,14 @@ import React from 'react';
 import DivOpacityAnimation from '../components/animations/DivOpacityAnimation';
 import ContactForm from './ContactForm';
 import ContactHeader from './ContactHeader';
+import ZIndexWrapper from '../components/zIndexWrapper';
 
 const Page = () => {
-
   return (
-    <div className='max-w-[1500px] mx-auto lg:px-0 md:px-20 sm:px-10 px-6'>
-      <ContactHeader />
+    <div className='max-w-[1500px] mx-auto lg:px-0 md:px-20 sm:px-10 min-[426px]:px-6 px-4'>
+      <ZIndexWrapper>
+        <ContactHeader />
+      </ZIndexWrapper>
       <ContactForm />
       <DivOpacityAnimation>
         <iframe

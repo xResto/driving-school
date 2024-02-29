@@ -17,6 +17,7 @@ const DivOpacityAnimation = ({
   const inView = useInView(ref, { once: true });
   const controls = useAnimation();
 
+
   useEffect(() => {
     if (inView) {
       controls.start('visible');
