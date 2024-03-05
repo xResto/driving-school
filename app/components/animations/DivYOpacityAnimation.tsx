@@ -6,12 +6,16 @@ import { useEffect, useRef } from 'react';
 interface DivYAnimationProps {
   absolute?: string;
   delay?: number;
+  minW?: string;
+  additionalStyles?: string;
   children: React.ReactNode;
 }
 
 const DivYAnimation = ({
   absolute = '',
-  delay = 0.25,
+  delay = 0.15,
+  minW = 'min-[529px]:w-auto w-full',
+  additionalStyles = '',
   children,
 }: DivYAnimationProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -25,7 +29,7 @@ const DivYAnimation = ({
   }, [inView, controls]);
 
   return (
-    <div ref={ref} className={absolute}>
+    <div ref={ref} className={`${absolute} ${minW} ${additionalStyles}`}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 25 },

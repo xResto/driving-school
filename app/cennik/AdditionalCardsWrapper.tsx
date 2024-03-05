@@ -14,8 +14,8 @@ const additionalPractice = [
 
 const AdditionalCardsWrapper = () => {
   return (
-    <DivYAnimation>
-      <div className='flex justify-center max-[1100px]:flex-col max-[1100px]:items-center mx-auto gap-10 pb-20 min-[426px]:px-6 px-4 sm:px-0'>
+    <div className='flex justify-center max-[1100px]:flex-col max-[1100px]:items-center mx-auto gap-10 pb-20 min-[426px]:px-6 px-4 sm:px-0'>
+      <DivYAnimation>
         <PriceCard
           heading='Wykłady - Kat. B'
           price='300 zł'
@@ -23,6 +23,8 @@ const AdditionalCardsWrapper = () => {
           content={lectures}
           priceWidth='max-[360px]:w-10'
         />
+      </DivYAnimation>
+      <DivYAnimation>
         <PriceCard
           heading='Jazdy uzupełniające'
           price='100 zł/h'
@@ -31,8 +33,8 @@ const AdditionalCardsWrapper = () => {
           additionalPText='80 zł/h dla naszych kursantów!'
           priceWidth='max-[424px]:w-10'
         />
-      </div>
-    </DivYAnimation>
+      </DivYAnimation>
+    </div>
   );
 };
 

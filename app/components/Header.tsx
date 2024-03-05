@@ -13,10 +13,10 @@ export default function Header() {
       <div className='absolute z-10 px-4 flex flex-col justify-center items-center text-white mt-[101px] max-w-[1200px]'>
         <DivOpacityAnimation>
           <div className='flex justify-center'>
-            <div className='flex gap-10 xl:p-8 p-6 text-center border-b-2 border-[#CE2029] xl:text-lg text-base'>
+            <div className='sm:flex gap-10 max-[1093px]:gap-5 max-lg:gap-10 max-sm:gap-4 grid grid-cols-2 xl:px-8 px-6 md:py-6 sm:py-5 py-3 text-center border-b-2 border-[#CE2029] xl:text-base md:text-sm text-xs'>
               <a
                 href='tel:607551092'
-                className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
+                className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all justify-self-end'
               >
                 <div className='flex gap-2 items-center'>
                   <Image
@@ -42,7 +42,7 @@ export default function Header() {
               </a>
               <a
                 href='mailto:wojteksc@op.pl'
-                className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all'
+                className='focus:text-[#f1dede] hover:text-[#f1dede] transform transition-all justify-self-center col-span-2'
               >
                 <div className='flex gap-2 items-center'>
                   <Image
@@ -58,14 +58,14 @@ export default function Header() {
         </DivOpacityAnimation>
         <DivOpacityAnimation>
           <FromLeftAnimation>
-            <div className='flex max-lg:flex-col items-center 2xl:mt-52 2xl:-ml-[12rem] xl:-ml-[4rem] xl:mt-32 mx-auto mt-24 xl:gap-10 gap-4'>
+            <div className='flex max-lg:flex-col items-center xl:mt-48 lg:mt-40 md:mt-36 sm:mt-32 mt-28 2xl:-ml-[12rem] xl:-ml-[4rem] mx-auto xl:gap-10 gap-4'>
               <div className='flex flex-col max-lg:items-center max-lg:text-center'>
                 <h1
-                  className={`${anton.className} xl:text-6xl text-5xl mb-4 `}
+                  className={`${anton.className} xl:text-6xl md:text-5xl text-4xl mb-4 `}
                 >
                   Zdaj na prawo jazdy z OSK WOJTEK
                 </h1>
-                <p className='sm:text-lg text-base xl:max-w-[50rem] max-w-[40rem]'>
+                <p className='lg:text-lg text-base xl:max-w-[50rem] max-w-[40rem]'>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry
                   standard dummy text ever since the 1500s, when an unknown
@@ -73,7 +73,7 @@ export default function Header() {
                   specimen book.
                 </p>
               </div>
-              <div className='flex items-center justify-center bg-[#2a2ac2] text-9xl font-bold size-40 rounded border-4 border-white'>
+              <div className='flex items-center justify-center bg-[#2a2ac2] lg:text-9xl sm:text-8xl text-7xl font-bold lg:size-40 sm:size-32 size-24 rounded border-4 border-white'>
                 L
               </div>
             </div>

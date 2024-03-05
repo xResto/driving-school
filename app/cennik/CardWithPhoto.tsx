@@ -1,5 +1,6 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import DivYAnimation from '../components/animations/DivYOpacityAnimation';
 
 interface CardWithPhotoProps {
   header: string;
@@ -27,26 +28,29 @@ const CardWithPhoto = ({
   pTextSize = 'min-[426px]:text-lg text-base',
 }: CardWithPhotoProps) => {
   return (
-    <div
-      className={`border border-[#191919] rounded-2xl ${cardHeight} ${cardWidth} ${placeSelf} p-2 bg-[#313131] text-white min-[426px]:text-2xl text-xl`}
-    >
-      <Image
-        src={imgSrc}
-        alt='Wykonywanie płatności online'
-        className={`rounded-xl w-full ${photoHeight} object-cover ${objectPosition}`}
-        loading='lazy'
-      />
-      <div className='flex flex-col h-1/2'>
-        <p className='my-2 pb-2 border-b-2 border-[#CE2029] text-center font-semibold'>
-          {header}
-        </p>
-        {text.map((t, i) => (
-          <p key={i} className={`pb-1 px-1 ${pTextSize} text-${textAlignment}`}>
-            {t}
+      <div
+        className={`border border-[#191919] rounded-2xl ${cardHeight} ${cardWidth} ${placeSelf} p-2 bg-[#313131] text-white min-[426px]:text-2xl text-xl`}
+      >
+        <Image
+          src={imgSrc}
+          alt='Wykonywanie płatności online'
+          className={`rounded-xl w-full ${photoHeight} object-cover ${objectPosition}`}
+          loading='lazy'
+        />
+        <div className='flex flex-col h-1/2'>
+          <p className='my-2 pb-2 border-b-2 border-[#CE2029] text-center font-semibold'>
+            {header}
           </p>
-        ))}
+          {text.map((t, i) => (
+            <p
+              key={i}
+              className={`pb-1 px-1 ${pTextSize} text-${textAlignment}`}
+            >
+              {t}
+            </p>
+          ))}
+        </div>
       </div>
-    </div>
   );
 };
 

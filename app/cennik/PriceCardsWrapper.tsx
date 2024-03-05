@@ -16,14 +16,16 @@ const expressCourse = [
 
 const PriceCardsWrapper = () => {
   return (
-    <DivYAnimation delay={0.75}>
-      <div className='-my-20 flex justify-center max-[1100px]:flex-col max-[1100px]:items-center mx-auto gap-10 min-[426px]:px-6 px-4 sm:px-0'>
+    <div className='-my-20 flex justify-center max-[1100px]:flex-col max-[1100px]:items-center mx-auto gap-10 min-[426px]:px-6 px-4 sm:px-0'>
+      <DivYAnimation delay={0.5}>
         <PriceCard
           heading='Kategoria B'
           price='2400 zł'
           color='bg-[#CE2029]'
           content={basicCourse}
         />
+      </DivYAnimation>
+      <DivYAnimation delay={0.5}>
         <PriceCard
           heading='Kat. B - kurs przyśpieszony'
           price='3000 zł'
@@ -31,8 +33,8 @@ const PriceCardsWrapper = () => {
           additionalPText='Ukończ jazdy w 2 tygodnie!'
           content={expressCourse}
         />
-      </div>
-    </DivYAnimation>
+      </DivYAnimation>
+    </div>
   );
 };
 
