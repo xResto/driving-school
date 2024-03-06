@@ -1,13 +1,13 @@
 import React from 'react';
 import ImageComponent from './ImageComponent';
-import Photo1 from '../../public/gallery/peugeot1.webp';
-import Photo2 from '../../public/gallery/peugeot2.webp';
-import Photo3 from '../../public/gallery/peugeot3.webp';
-import Photo4 from '../../public/gallery/peugeot4.webp';
-import Photo5 from '../../public/gallery/peugeot5.webp';
-import Photo6 from '../../public/gallery/peugeot6.webp';
-import Photo7 from '../../public/gallery/peugeot7.webp';
-import Photo8 from '../../public/gallery/peugeot8.webp';
+import Photo1 from '../../public/gallery/Peugeot1.webp';
+import Photo2 from '../../public/gallery/Peugeot2.webp';
+import Photo3 from '../../public/gallery/Peugeot3.webp';
+import Photo4 from '../../public/gallery/Peugeot4.webp';
+import Photo5 from '../../public/gallery/Peugeot5.webp';
+import Photo6 from '../../public/gallery/Peugeot6.webp';
+import Photo7 from '../../public/gallery/Peugeot7.webp';
+import Photo8 from '../../public/gallery/Peugeot8.webp';
 import MasonryWrapper from './MasonryWrapper';
 // import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
