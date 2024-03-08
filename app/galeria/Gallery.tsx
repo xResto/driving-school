@@ -9,6 +9,8 @@ import Photo6 from '../../public/gallery/Peugeot6.webp';
 import Photo7 from '../../public/gallery/Peugeot7.webp';
 import Photo8 from '../../public/gallery/Peugeot8.webp';
 import MasonryWrapper from './MasonryWrapper';
+import { getPlaiceholder } from 'plaiceholder';
+import fs from 'node:fs/promises';
 
 // niech to będzie tablica obiektów z src i alt
 const photoArray = [
@@ -39,9 +41,14 @@ const photoArray = [
   Photo4,
 ];
 
-const Gallery = () => {
+const Gallery = async () => {
+  const buffer = await fs.readFile('./public/gallery/Peugeot1.webp');
+  const { base64 } = await getPlaiceholder(buffer);
+
+  console.log(typeof base64);
+
   return (
-      <MasonryWrapper>
+    <MasonryWrapper>
       {photoArray.map((photo, index) => (
         <Image
           key={index}
@@ -50,10 +57,12 @@ const Gallery = () => {
           width={photo.width}
           height={photo.height}
           placeholder='blur'
-          blurDataURL={photo.blurDataURL}
+          // blurDataURL={photo.blurDataURL}
+          blurDataURL={base64}
           className='cursor-pointer rounded hover:opacity-75 active:opacity-75 hover:scale-105 transform transition-all'
         />
-      ))}</MasonryWrapper>
+      ))}
+    </MasonryWrapper>
   );
 };
 
