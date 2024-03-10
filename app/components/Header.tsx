@@ -71,7 +71,7 @@ export default function Header() {
                   jazdy kategorii B. Zapraszamy!
                 </p>
               </div>
-              <div className='flex items-center justify-center bg-[#2a2ac2] lg:text-9xl sm:text-8xl text-7xl font-bold lg:size-40 sm:size-32 size-24 rounded border-4 border-white'>
+              <div className='flex items-center justify-center bg-[#2a2ac2] lg:text-9xl sm:text-8xl text-7xl font-bold lg:size-40 sm:size-32 size-24 rounded lg:border-[6px] sm:border-[5px] border-4 border-white'>
                 L
               </div>
             </div>
