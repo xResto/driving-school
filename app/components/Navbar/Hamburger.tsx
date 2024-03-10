@@ -17,6 +17,7 @@ const Hamburger = () => {
       <motion.button
         className='py-3 px-4 min-[426px]:pr-4 pr-0'
         aria-controls='primary-navigation'
+        aria-label='Toggle menu'
         onClick={() => setIsMenuOpen((prev) => !prev)}
         initial={false}
         animate={isMenuOpen ? 'open' : 'closed'}

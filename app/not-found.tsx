@@ -16,7 +16,7 @@ const NotFound = () => {
         </h2>
         <Link href='/'>
           <ButtonRed textStyles='md:text-xl text-lg'>
-            Powrót do strony głównej
+            Przejdź do strony głównej
           </ButtonRed>
         </Link>
       </div>

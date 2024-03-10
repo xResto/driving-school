@@ -48,7 +48,7 @@ const Navbar = () => {
           </Link>
         </div>
         <Hamburger />
-        <ul
+        <div
           className={`${
             isMenuOpen ? '' : 'max-md:hidden'
           } flex md:gap-6 gap-0 items-center text-lg max-md:fixed max-md:z-[100] max-md:top-[5.4rem] max-md:left-0 max-md:bg-[#111111] max-md:w-full max-md:flex-col`}
@@ -117,7 +117,7 @@ const Navbar = () => {
               Kontakt
             </RedUnderscoreHoverAnimation>
           </Link>
-        </ul>
+        </div>
       </div>
     </nav>
   );

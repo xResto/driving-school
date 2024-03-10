@@ -12,48 +12,56 @@ import MasonryWrapper from './MasonryWrapper';
 
 // niech to będzie tablica obiektów z src i alt
 const photoArray = [
-  Photo1,
-  Photo2,
-  Photo3,
-  Photo4,
-  Photo5,
-  Photo6,
-  Photo7,
-  Photo8,
-
-  Photo6,
-  Photo3,
-  Photo8,
-  Photo5,
-  Photo1,
-  Photo4,
-  Photo7,
-  Photo2,
-  Photo5,
-  Photo2,
-  Photo7,
-  Photo3,
-  Photo1,
-  Photo8,
-  Photo6,
-  Photo4,
+  {
+    imgSrc: Photo1,
+    alt: 'Samochód nauki jazdy na placu manewrowym.',
+  },
+  {
+    imgSrc: Photo2,
+    alt: 'Samochód nauki jazdy na placu manewrowym.',
+  },
+  {
+    imgSrc: Photo3,
+    alt: 'Samochód nauki jazdy na placu manewrowym.',
+  },
+  {
+    imgSrc: Photo4,
+    alt: 'Wnętrze samochodu do nauki jazdy oraz plac manewrowy Tarnobrzeg.',
+  },
+  {
+    imgSrc: Photo5,
+    alt: 'Samochód nauki jazdy znajdujący się na kopercie na placu manewrowym WORD Tarnobrzeg.',
+  },
+  {
+    imgSrc: Photo6,
+    alt: 'Samochód nauki jazdy na placu manewrowym WORD Tarnobrzeg.',
+  },
+  {
+    imgSrc: Photo7,
+    alt: 'Samochód nauki jazdy znajdujący się na kopercie na placu manewrowym WORD Tarnobrzeg.',
+  },
+  {
+    imgSrc: Photo8,
+    alt: 'Koperta na placu manwerowym WORD Tarnobrzeg.',
+  },
 ];
 
 const Gallery = () => {
   return (
-      <MasonryWrapper>
+    <MasonryWrapper>
       {photoArray.map((photo, index) => (
         <Image
           key={index}
-          src={photo.src}
-          alt={`Peugeot ${index + 1}`}
-          width={photo.width}
-          height={photo.height}
+          src={photo.imgSrc.src}
+          alt={photo.alt}
+          width={photo.imgSrc.width}
+          height={photo.imgSrc.height}
           placeholder='blur'
-          blurDataURL={photo.blurDataURL}
+          blurDataURL={photo.imgSrc.blurDataURL}
           className='cursor-pointer rounded hover:opacity-75 active:opacity-75 hover:scale-105 transform transition-all'
         />
-      ))}</MasonryWrapper>
+      ))}
+    </MasonryWrapper>
   );
 };
 

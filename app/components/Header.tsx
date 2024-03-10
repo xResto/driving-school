@@ -9,7 +9,7 @@ import PhoneIconWhite from '../../public/phone-icon-white.svg';
 
 export default function Header() {
   return (
-    <main className='relative -top-[101px] bg-[#f5f5f5] flex justify-center'>
+    <main className='relative -top-[101px] bg-[#fffefe] flex justify-center'>
       <div className='absolute z-10 px-4 flex flex-col justify-center items-center text-white mt-[101px] max-w-[1200px]'>
         <DivOpacityAnimation>
           <div className='flex justify-center'>
@@ -58,7 +58,7 @@ export default function Header() {
         </DivOpacityAnimation>
         <DivOpacityAnimation>
           <FromLeftAnimation>
-            <div className='flex max-lg:flex-col items-center xl:mt-48 lg:mt-40 md:mt-36 sm:mt-32 mt-28 2xl:-ml-[12rem] xl:-ml-[4rem] mx-auto xl:gap-10 gap-4'>
+            <div className='flex max-lg:flex-col items-center xl:mt-44 lg:mt-40 md:mt-36 sm:mt-32 mt-20 mx-auto xl:gap-10 gap-4'>
               <div className='flex flex-col max-lg:items-center max-lg:text-center'>
                 <h1
                   className={`${anton.className} xl:text-6xl md:text-5xl text-4xl mb-4 `}
@@ -66,11 +66,9 @@ export default function Header() {
                   Zdaj na prawo jazdy z OSK WOJTEK
                 </h1>
                 <p className='lg:text-lg text-base xl:max-w-[50rem] max-w-[40rem]'>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Pomożemy Ci zdać prawo jazdy w Tarnobrzegu. Zajęcia
+                  teoretyczne i praktyczne, jazdy doszkalające, kursy na prawo
+                  jazdy kategorii B. Zapraszamy!
                 </p>
               </div>
               <div className='flex items-center justify-center bg-[#2a2ac2] lg:text-9xl sm:text-8xl text-7xl font-bold lg:size-40 sm:size-32 size-24 rounded border-4 border-white'>
@@ -95,16 +93,16 @@ export default function Header() {
         max-[400px]:w-[10rem] max-[400px]:bottom-[6.25%] max-[350px]:bottom-[5.5%]'
       ></div>
 
-      <Image
-        src={WomanDrivingCarImg}
-        alt='car-driving'
-        priority={true}
-        placeholder='blur'
-        className='h-[100vh] max-xl:h-[95vh] object-cover header-img'
-        style={{
-          clipPath: 'polygon(0 0, 100% 0%, 100% 83%, 0% 100%)',
-        }}
-      />
+        <Image
+          src={WomanDrivingCarImg}
+          alt='car-driving'
+          priority={true}
+          placeholder='blur'
+          className='h-dvh max-xl:h-[95dvh] object-cover header-img'
+          style={{
+            clipPath: 'polygon(0 0, 100% 0%, 100% 83%, 0% 100%)',
+          }}
+        />
       <div
         className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-50'
         style={{
@@ -114,3 +112,5 @@ export default function Header() {
     </main>
   );
 }
+
+// max-xl:h-[95dvh]

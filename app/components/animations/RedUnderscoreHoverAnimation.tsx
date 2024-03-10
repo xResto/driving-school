@@ -18,7 +18,7 @@ const RedUnderscoreHoverAnimation = ({
   };
 
   return (
-    <motion.li className='relative py-2' initial='hidden' whileHover='visible'>
+    <motion.div className='relative py-2' initial='hidden' whileHover='visible'>
       {children}
       {currentPath !== thisPath && (
         <motion.div
@@ -27,7 +27,7 @@ const RedUnderscoreHoverAnimation = ({
           className='absolute bottom-0 left-0 border-b-2 border-[#CE2029] max-md:hidden'
         />
       )}
-    </motion.li>
+    </motion.div>
   );
 };
 

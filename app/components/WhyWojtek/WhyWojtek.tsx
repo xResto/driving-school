@@ -9,7 +9,7 @@ import DivOpacityAnimation from '../animations/DivOpacityAnimation';
 
 export default function WhyWojtek() {
   return (
-    <section className='flex justify-center bg-[#f5f5f5] -mt-[101px] xl:h-[46rem] lg:h-[42rem] sm:h-[46rem] min-[550px]:h-[42rem] min-[460px]:h-[38rem] min-[375px]:h-[35rem] h-[36rem] pt-16 md:px-12 px-6'>
+    <section className='flex justify-center bg-[#fffcfc] -mt-[101px] xl:h-[46rem] lg:h-[42rem] sm:h-[46rem] min-[550px]:h-[42rem] min-[460px]:h-[38rem] min-[375px]:h-[35rem] h-[36rem] pt-16 md:px-12 px-6'>
       <div className='w-[1200px] max-w-[1200px]'>
         <div className='flex lg:flex-row flex-col-reverse max-lg:items-center xl:gap-28 gap-10'>
           <DivAnimation absolute='absolute' delay={0.75} minW='w-auto'>
@@ -22,7 +22,7 @@ export default function WhyWojtek() {
           </DivAnimation>
           <WhyWojtekImg />
 
-          <div className='flex flex-col max-lg:gap-10 max-lg:text-center justify-evenly lg:w-full sm:w-[36rem] w-full'>
+          <div className='flex flex-col max-lg:gap-10 max-lg:text-center min-[1120px]:justify-around justify-between lg:w-full sm:w-[36rem] w-full'>
             <DivOpacityAnimation>
               <h2
                 className={`${anton.className} min-[1103px]:text-6xl text-5xl`}
@@ -31,11 +31,16 @@ export default function WhyWojtek() {
               </h2>
             </DivOpacityAnimation>
             <DivOpacityAnimation>
-              <p className='sm:text-lg text-base'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                tellus nisl, faucibus in lacus ac, luctus placerat libero. In
-                porta feugiat dui, sit amet aliquam urna condimentum nec. Sed ac
-                commodo mauris. Pellentesque cursus sed mauris at varius.
+              <p className='lg:text-base min-[1065px]:text-lg text-lg text-justify'>
+                Szkolimy przyszłych kierowców od ponad&nbsp;
+                <span className='font-semibold'>20 lat</span>.<br className='xl:block hidden'></br> W naszej
+                ofercie znajdziesz kursy na prawo jazdy kategorii B. Zapewniamy
+                profesjonalne szkolenie i indywidualne podejście do każdego
+                kursanta. Dbamy o&nbsp;
+                <span className='font-semibold'>przyjazną atmosferę</span> i
+                Twój komfort podczas nauki. Jesteśmy przekonani, że nasza pasja
+                i zaangażowanie pozwolą Ci zdać egzamin na prawo jazdy za
+                pierwszym razem.
               </p>
             </DivOpacityAnimation>
             <DivOpacityAnimation>
