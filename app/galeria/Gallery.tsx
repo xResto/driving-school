@@ -86,10 +86,15 @@ const photoArray = [
 
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [currentImage, setCurrentImage] = useState({ src: '', alt: '' });
+  const [currentImage, setCurrentImage] = useState({
+    src: '',
+    alt: '',
+    blurDataURL: '',
+  });
   // const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const isMobile = typeof window !== 'undefined' && window.innerWidth >= 768;
 
   useEffect(() => {
     const currentImageParam = searchParams.get('image');
@@ -98,6 +103,7 @@ const Gallery = () => {
       setCurrentImage({
         src: photoArray[currentImageIndex].imgSrc.src,
         alt: photoArray[currentImageIndex].alt,
+        blurDataURL: photoArray[currentImageIndex].imgSrc.blurDataURL ?? '',
       });
       setIsOpen(true);
     }
@@ -119,14 +125,19 @@ const Gallery = () => {
               height={photo.imgSrc.height}
               placeholder='blur'
               blurDataURL={photo.imgSrc.blurDataURL}
-              onClick={() => {
-                setIsOpen(true);
-                setCurrentImage({
-                  src: photo.imgSrc.src,
-                  alt: photo.alt,
-                });
-              }}
-              className='cursor-pointer rounded hover:opacity-75 active:opacity-75 hover:scale-105 transform transition-all'
+              onClick={
+                isMobile
+                  ? () => {
+                      setIsOpen(true);
+                      setCurrentImage({
+                        src: photo.imgSrc.src,
+                        alt: photo.alt,
+                        blurDataURL: photo.imgSrc.blurDataURL ?? '',
+                      });
+                    }
+                  : () => console.log('mobile')
+              }
+              className='md:cursor-pointer cursor-auto rounded md:hover:opacity-75 md:active:opacity-75 md:hover:scale-105 transform transition-all'
             />
           </Link>
         ))}
@@ -139,6 +150,8 @@ const Gallery = () => {
         <Image
           src={currentImage.src}
           alt={currentImage.alt}
+          placeholder='blur'
+          blurDataURL={currentImage.blurDataURL}
           width={800}
           height={600}
           loading='lazy'

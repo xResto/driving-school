@@ -66,7 +66,7 @@ const Modal = ({
     <Dialog
       open={isOpen}
       onClose={handleClose}
-      className='fixed inset-0 z-10 flex items-center justify-center p-4'
+      className='fixed inset-0 z-10 md:flex hidden items-center justify-center p-4'
     >
       <div className='fixed inset-0 bg-black/75' aria-hidden='true' />
       <Dialog.Panel className={`w-full flex items-center justify-between`}>

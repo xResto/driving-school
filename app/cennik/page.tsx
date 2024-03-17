@@ -35,7 +35,6 @@ const Cennik = () => {
       <AdditionalCardsWrapper />
       <PaymentMethods />
       <CourseElements />
-      {/* <CourseElements2 /> */}
     </>
   );
 };
