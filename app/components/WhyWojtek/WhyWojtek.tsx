@@ -25,16 +25,17 @@ export default function WhyWojtek() {
           <div className='flex flex-col max-lg:gap-10 max-lg:text-center min-[1120px]:justify-around justify-between lg:w-full sm:w-[36rem] w-full'>
             <DivOpacityAnimation>
               <h2
-                className={`${anton.className} min-[1103px]:text-6xl text-5xl`}
-              >
-                Dlaczego WOJTEK
+                className={`${anton.className} min-[1104px]:text-6xl text-5xl max-xl:text-center`}
+              >Kilka słów o nas
               </h2>
             </DivOpacityAnimation>
             <DivOpacityAnimation>
               <p className='lg:text-base min-[1065px]:text-lg text-lg text-justify'>
                 Szkolimy przyszłych kierowców od ponad&nbsp;
-                <span className='font-semibold'>20 lat</span>.<br className='xl:block hidden'></br> W naszej
-                ofercie znajdziesz kursy na prawo jazdy kategorii B. Zapewniamy
+                <span className='font-semibold'>20 lat</span>.
+                <br className='xl:block hidden'></br> W naszej ofercie
+                znajdziesz kursy na prawo jazdy&nbsp;
+                <span className='font-semibold'>kategorii B</span>. Zapewniamy
                 profesjonalne szkolenie i indywidualne podejście do każdego
                 kursanta. Dbamy o&nbsp;
                 <span className='font-semibold'>przyjazną atmosferę</span> i

@@ -49,39 +49,39 @@ const photoArray = [
     alt: 'Koperta na placu manwerowym WORD Tarnobrzeg.',
   },
 
-  {
-    imgSrc: Photo7,
-    alt: 'Samochód nauki jazdy znajdujący się na kopercie na placu manewrowym WORD Tarnobrzeg.',
-  },
+  // {
+  //   imgSrc: Photo7,
+  //   alt: 'Samochód nauki jazdy znajdujący się na kopercie na placu manewrowym WORD Tarnobrzeg.',
+  // },
 
-  {
-    imgSrc: Photo4,
-    alt: 'Wnętrze samochodu do nauki jazdy oraz plac manewrowy Tarnobrzeg.',
-  },
-  {
-    imgSrc: Photo5,
-    alt: 'Samochód nauki jazdy znajdujący się na kopercie na placu manewrowym WORD Tarnobrzeg.',
-  },
-  {
-    imgSrc: Photo6,
-    alt: 'Samochód nauki jazdy na placu manewrowym WORD Tarnobrzeg.',
-  },
-  {
-    imgSrc: Photo8,
-    alt: 'Koperta na placu manewrowym WORD Tarnobrzeg.',
-  },
-  {
-    imgSrc: Photo1,
-    alt: 'Samochód nauki jazdy na placu manewrowym.',
-  },
-  {
-    imgSrc: Photo2,
-    alt: 'Samochód nauki jazdy na placu manewrowym.',
-  },
-  {
-    imgSrc: Photo3,
-    alt: 'Samochód nauki jazdy na placu manewrowym.',
-  },
+  // {
+  //   imgSrc: Photo4,
+  //   alt: 'Wnętrze samochodu do nauki jazdy oraz plac manewrowy Tarnobrzeg.',
+  // },
+  // {
+  //   imgSrc: Photo5,
+  //   alt: 'Samochód nauki jazdy znajdujący się na kopercie na placu manewrowym WORD Tarnobrzeg.',
+  // },
+  // {
+  //   imgSrc: Photo6,
+  //   alt: 'Samochód nauki jazdy na placu manewrowym WORD Tarnobrzeg.',
+  // },
+  // {
+  //   imgSrc: Photo8,
+  //   alt: 'Koperta na placu manewrowym WORD Tarnobrzeg.',
+  // },
+  // {
+  //   imgSrc: Photo1,
+  //   alt: 'Samochód nauki jazdy na placu manewrowym.',
+  // },
+  // {
+  //   imgSrc: Photo2,
+  //   alt: 'Samochód nauki jazdy na placu manewrowym.',
+  // },
+  // {
+  //   imgSrc: Photo3,
+  //   alt: 'Samochód nauki jazdy na placu manewrowym.',
+  // },
 ];
 
 const Gallery = () => {
@@ -94,7 +94,7 @@ const Gallery = () => {
   // const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const isMobile = typeof window !== 'undefined' && window.innerWidth >= 768;
+  const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 640;
 
   useEffect(() => {
     const currentImageParam = searchParams.get('image');
@@ -126,7 +126,7 @@ const Gallery = () => {
               placeholder='blur'
               blurDataURL={photo.imgSrc.blurDataURL}
               onClick={
-                isMobile
+                isDesktop
                   ? () => {
                       setIsOpen(true);
                       setCurrentImage({
@@ -135,9 +135,9 @@ const Gallery = () => {
                         blurDataURL: photo.imgSrc.blurDataURL ?? '',
                       });
                     }
-                  : () => console.log('mobile')
+                  : undefined
               }
-              className='md:cursor-pointer cursor-auto rounded md:hover:opacity-75 md:active:opacity-75 md:hover:scale-105 transform transition-all'
+              className='sm:cursor-pointer cursor-auto rounded sm:hover:opacity-75 sm:active:opacity-75 sm:hover:scale-105 transform transition-all'
             />
           </Link>
         ))}

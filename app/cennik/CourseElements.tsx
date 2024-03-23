@@ -71,7 +71,7 @@ const CourseElements = () => {
               text={[
                 '- Egzamin teoretyczny w formie testu.',
                 '- Egzamin praktyczny, przeprowadzany przez instruktora prowadzącego zajęcia.',
-                'Egzamin można zdadawć dowolną ilość razy, dzięki czemu kursant ma możliwość zapoznania się z warunkami egzaminu.',
+                'Egzamin można zdawać dowolną ilość razy, dzięki czemu kursant ma możliwość zapoznania się z warunkami egzaminu.',
               ]}
               imgSrc={Exam}
               objectPosition='object-bottom'

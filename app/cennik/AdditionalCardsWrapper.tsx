@@ -3,13 +3,13 @@ import PriceCard from './PriceCard';
 import DivYAnimation from '../components/animations/DivYOpacityAnimation';
 
 const lectures = [
-  '30 godzin wykładów teoretycznych, prowadzonych stacjonarnie',
-  'materiały dydaktyczne w cenie',
+  '30 godzin wykładów teoretycznych, prowadzonych stacjonarnie,',
+  'materiały dydaktyczne w cenie.',
 ];
 
 const additionalPractice = [
-  'Praesent et turpis nec libero efficitur sollicitudin',
-  'Maecenas maximus ipsum quis convallis semper',
+  'doskonalenie umiejętności przed egzaminem,',
+  'przypomnienie zasad bezpiecznej jazdy po dłuższej przerwie za kierownicą.',
 ];
 
 const AdditionalCardsWrapper = () => {

@@ -15,11 +15,11 @@ const Cennik = () => {
             <h1 className={`${anton.className} text-4xl sm:text-6xl`}>
               Cennik kursów na prawo jazdy
             </h1>
-            <p className='py-6 sm:text-lg text-base'>
+            {/* <p className='py-6 sm:text-lg text-base'>
               Donec nec lobortis ipsum. Vestibulum consequat sem in dignissim
               pellentesque. Aliquam condimentum, risus eu ornare egestas, leo
               lectus sollicitudin diam, et luctus neque ex eget magna.
-            </p>
+            </p> */}
           </div>
         </DivOpacityAnimation>
       </div>
