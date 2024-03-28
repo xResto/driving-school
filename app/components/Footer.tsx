@@ -8,11 +8,11 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='bg-[#191919] text-white w-full flex flex-col items-center justify-center py-4 xl:px-0 sm:px-10 px-5'>
+    <footer className='bg-[#191919] text-white w-full flex flex-col items-center justify-center py-4 xl:px-0 min-[380px]:px-10 px-5'>
       <div className='w-full text-base'>
         <div className='2xl:max-w-[1200px] xl:max-w-[1000px] lg:max-w-[800px] sm:max-w-[600px] w-full mx-auto mt-4'>
           <h6 className='text-3xl border-l-2 border-[#CE2029] pl-4'>Kontakt</h6>
-          <div className='flex sm:flex-row flex-col sm:items-stretch items-center sm:gap-0 gap-10 justify-between w-full pt-12'>
+          <div className='flex sm:flex-row flex-col items-stretch sm:gap-0 gap-10 justify-between w-full pt-12'>
             <div className='flex gap-3 text-center leading-5'>
               <div className='flex flex-col gap-6 justify-center items-center'>
                 <Image
