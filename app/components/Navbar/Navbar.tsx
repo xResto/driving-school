@@ -64,21 +64,6 @@ const Navbar = () => {
             </RedUnderscoreHoverAnimation>
           </Link>
           <Link
-            href='/jak-zaczac-kurs'
-            className={`max-md:w-full text-center max-md:py-4 ${
-              pathname === '/jak-zaczac-kurs'
-                ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]'
-                : ''
-            }`}
-          >
-            <RedUnderscoreHoverAnimation
-              currentPath={pathname}
-              thisPath='/jak-zaczac-kurs'
-            >
-              Jak zacząć kurs
-            </RedUnderscoreHoverAnimation>
-          </Link>
-          <Link
             href='/cennik'
             className={`max-md:w-full text-center max-md:py-4 ${
               pathname === '/cennik' ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]' : ''
@@ -102,6 +87,21 @@ const Navbar = () => {
               thisPath='/galeria'
             >
               Galeria
+            </RedUnderscoreHoverAnimation>
+          </Link>
+          <Link
+            href='/jak-zaczac-kurs'
+            className={`max-md:w-full text-center max-md:py-4 ${
+              pathname === '/jak-zaczac-kurs'
+                ? 'md:border-b-2 md:border-[#CE2029] md:text-white text-[#CE2029]'
+                : ''
+            }`}
+          >
+            <RedUnderscoreHoverAnimation
+              currentPath={pathname}
+              thisPath='/jak-zaczac-kurs'
+            >
+              Jak zacząć kurs
             </RedUnderscoreHoverAnimation>
           </Link>
           <Link
