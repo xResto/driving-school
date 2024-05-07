@@ -11,7 +11,7 @@
 # About The Project
 
 The main goal of the project was to present the offerings of the driving school in a simple and appealing manner. The website also features a photo gallery and guidance on starting a course. Additionally, it facilitates communication with school through a contact form.
-The technologies used include Next.js, TypeScript, Tailwind CSS, Framer Motion, Resend
+The technologies used include Next.js, TypeScript, Tailwind CSS, Framer Motion, Resend.
 
 ## Getting Started
 
